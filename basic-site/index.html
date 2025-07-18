@@ -1,140 +1,520 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
+<title>旧站</title>
+
+<link rel='canonical' href='http://localhost:8080/basic-site/'>
+
+<link rel="stylesheet" href="/scss/style.min.eda01d451a0c1e8457f953678e7f0080e8c393c0de4d92da31999ea26e6a5635.css"><meta property='og:title' content="旧站">
+<meta property='og:description' content="">
+<meta property='og:url' content='http://localhost:8080/basic-site/'>
+<meta property='og:site_name' content='FlameTech6博客网站'>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' />
+<meta name="twitter:title" content="旧站">
+<meta name="twitter:description" content="">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_f509edb42ecc0ebd.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">📡</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">FlameTech6博客网站</a></h1>
+            <h2 class="site-description">电波或逝，硅焰不熄！<br>频写星河，码铸锋芒！<br>科创之路，递归永恒！</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/FTech6/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
 
 
-<head>
 
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-
-   <link rel="stylesheet" href="css\style.css">
-   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-   <script src="https://res.zvo.cn/translate/translate.js"></script>
-
-   <title>FlameTech6 Web</title>
-   <meta name="author" content="FlameTech6 (FT6)" />
-   <meta name="description" content="这是 FlameTech6 的个人网页，包含了一些关于 FlameTech6 的简单介绍和各个平台的账号等信息" />
-   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-</head>
-
-
-<body>
-
-   <div id="lang-select" style="margin: auto;border: 5px solid #114099;width: 80%;padding: 5px;margin-top: 17px;text-align: center;">
-      <a><img src="https://ts1.cn.mm.bing.net/th?id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F&w=20&h=20" alt="Language" width="20" height="20"></a>
-      <a>选择语言(Select language):</a>
-   </div>
-
-   <div style="margin: auto;width: 75%;padding: 15px;margin-top: 17px;border: 4px solid transparent;border-radius: 16px;background-clip: padding-box, border-box;background-origin: padding-box, border-box;background-image: linear-gradient(to right, #EE82EE, #00D1FF), linear-gradient(90deg, #8F41E9, #578AEF);"><!-- 调整版式并加入页面边框进行美化 -->
-   <!-- <div style="margin: auto;width: 75%;border: 5px solid #114099;padding: 15px;margin-top: 5px;"> <!-- 调整版式并加入页面边框进行美化 -->
-
-      <div>
-         <h1 style='text-align:center;'>FlameTech6 Web</h1>
-         <p style='text-align:center;'><img src="favicon.ico" alt="头像" align="middle" width="48" height="48">（ FlameTech6 可有3种称谓：FlameTech6、FlameTech、FT6）</p>
-      </div>
-
-      <div>
-         <h3>FlameTech6 的个人简介</h3>
-         <p>所属国家：中华人民共和国</p>
-         <p>兴趣爱好：科技（计算机、电子、化学、业余无线电），游戏（Minecraft）</p>
-      </div>
-
-      <br>
-      <HR style="border-bottom: 2px dashed black;" width="100%">
-      <br>
-
-      <div>
-
-         <h3>FlameTech6 的平台账号(点击对应图标即可进入)</h3>
-
-         <p>
-            <a href="https://space.bilibili.com/3546717590915956" target="_new"><img src="https://ts2.cn.mm.bing.net/th?id=ODLS.e42d2c4d-ad65-4c7a-b0fd-817a1c3bed01&w=32&h=32" alt="哔哩哔哩" width="32" height="32"></a>
-            <a href="https://afdian.com/a/FlameTech" target="_new"><img src="https://ts1.cn.mm.bing.net/th?id=ODLS.410483d2-ce7f-4190-9cb1-30b36831c1e5&w=32&h=32" alt="爱发电" width="32" height="32"></a>
-            <a href="https://github.com/FlameTech6" target="_new"><img src="https://ts3.cn.mm.bing.net/th?id=ODLS.e3af44e9-08e8-4ce9-8151-e19ba73b312d&w=32&h=32" alt="GitHub" width="32" height="32"></a>
-            <a href="https://gitee.com/FlameTech6" target="_new"><img src="https://ts1.tc.mm.bing.net/th/id/ODLS.a0615180-18f5-480f-afb5-677d55fa12bb?w=32&h=32" alt="Gitee" width="32" height="32"></a>
-            <a href="https://forum.hamcq.cn/u/6846" target="_new"><img src="https://docs.hamcq.cn/img/logo/favicon-wmioxuat.png" alt="HamCQ" width="32" height="32"></a>
-         </p>
-
-         <br>
-
-         <h3>FlameTech6 的QQ交流群(点击即可加入群聊)</h3>
-         <p><a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=kd4JZ15sJCW7y0iAPwIGSr1B79c8hag3&authKey=HTJuc0mHFcPY3J6vWrfnyPQth%2FJn%2Fq8V04Eb8bIgfK3KLBZ%2Bylo8GEQ79NW%2FxaSq&noverify=0&group_code=464476156" target="_new" ><img src="https://qzonestyle.gtimg.cn/qzone/qzact/act/external/tiqq/logo.png" alt="QQ交流群[1群]" width="32" height="32">QQ交流群[1群]</a></p>
-
-         <br>
-
-      </div>
-
-      <br>
-      <HR style="border-bottom: 2px dashed black;" width="100%">
-      <br>
-
-      <p>FlameTech6 工具箱 (在线小工具)</p>
-      <p><a href="Toolbox\IDVerify\index.html">中国公民身份证验证与分析工具 (校验码比对法)</a></p>
-      <p><a href="Toolbox\AlipayQRCode\index.html">支付宝定额收款码生成程序</a></p>
-      <p><a href="Toolbox\IPQuery\index.html">本机IP地址信息查询</a></p>
-      <br>
-      <HR style="border-bottom: 2px dashed black;" width="100%">
-      <br>
-
-      <p>FlameTech6 网页小游戏 (在线小游戏)</p>
-      <p><a href="WebGameBox\CatchTheCat\index.html">《圈小猫》</a></p>
-
-      <br>
-      <HR style="border-bottom: 2px dashed black;" width="100%">
-      <br>
-
-      <p><a>代表作视频:</a></p>
-      <div style="text-align: center;">
-         <iframe src="//player.bilibili.com/player.html?bvid=BV1jZe7eoE99&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="85%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
-      </div>
-
-      <br>
-      <HR style="border-bottom: 2px dashed black;" width="100%">
-      <br>
-
-      <div>
-         <p>友情链接：(与本人完全无关)</p>
-         <a href="https://mxfree.ao-x.top/donate" target="_new">慕迅公益加速器捐助页面</a>
-      </div>
-
-      <div id="html_effect"><!--网页效果-->
-
-         <!--鼠标运动效果:开始-->
-         <script type="text/javascript" src="js\fairyDustCursor.js" id="fairyDustCursor-js"></script>
-         <canvas width="100%" height="100%" style="top: 0px; left: 0px; pointer-events: none; position: fixed;"></canvas>
-         <!--鼠标运动效果:结束-->
-
-         <!--鼠标点击效果:开始-->
-         <div width="100%" height="100%" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></div>
-         <script src="https://blog-static.cnblogs.com/files/elkyo/mouse-click.js"></script>
-         <!--鼠标点击效果:结束-->
-
-      </div>
-
-      <script>
-         //translate.ignore.tag.push(''); // 翻译时加上想忽略的tag标签，凡是在这里面的都不进行翻译。
-         //translate.ignore.class.push(''); // 翻译时指定忽略的class，在这里面的class都不进行翻译。如果不设置默认只有 ignore 这一个。
-         translate.setAutoDiscriminateLocalLanguage(); // 设置用户第一次用时，自动识别其所在国家的语种进行切换
-         translate.language.setLocal('chinese_simplified'); // 设置本地语种（当前网页的语种）。如果不设置，默认为 'chinese_simplified' 简体中文。 可填写如 'english'、'chinese_simplified' 等。
-         translate.service.use('client.edge');
-         translate.language.setUrlParamControl(); // url参数后可以加get方式传递 language 参数的方式控制当前网页以什么语种显示
-         translate.listener.start(); // 开启html页面变化的监控，对变化部分会进行自动翻译。注意，这里变化区域，是指使用 translate.setDocuments(...) 设置的区域。如果未设置，那么为监控整个网页的变化
-         translate.execute(); // 执行翻译初始化操作，显示出select语言选择
-         var langbox = document.getElementById("lang-select");
-         var langselectbox = document.getElementById("translateSelectLanguage");
-         langbox.appendChild(langselectbox);
-      </script>
-
-   </div>
-
-</body>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/3546717590915956/'
+                        target="_blank"
+                        title="bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
 
 
-<footer style="margin-top: 20px; background-color: white;">
-    <p style="text-align: center; color: black; padding: 20px 0; font-size: 14px; margin: 0;">本网页端由 FlameTech6 制作</p>
-    <p style="text-align: center; color: black; padding: 20px 0; font-size: 14px; margin: 0;">©2024 FlameTech6. All rights reserved. </p>
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li  class='current' >
+            <a href='/basic-site/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>旧站</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='' >
+                
+                
+                
+                <span></span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M14.1429 18.5H19.8571M21 21L19.8571 18.5L21 21ZM13 21L14.1429 18.5L13 21ZM14.1429 18.5L17 12L19.8571 18.5H14.1429Z"/>
+  <path d="M8 3L8.5 4.5"/>
+  <path d="M3 5.5H14"/>
+  <path d="M5 8C5 8 5.8947 11.1304 8.1316 12.8696C10.3684 14.6087 14 16 14 16"/>
+  <path d="M12 5.5C12 5.5 11.1053 9.6087 8.8684 11.8913C6.6316 14.1739 3 16 3 16"/>
+</svg>
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:8080/" selected>简体中文</option>
+                                
+                                    <option value="http://localhost:8080/en/" >English</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/basic-site/">旧站</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 0 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2023 - 
+        
+        2025 FlameTech6. All rights reserved.
+    </section>
+    
+    <section class="powerby">
+        
+            电波或逝，硅焰不熄！频写星河，码铸锋芒！科创之路，递归永恒！ <br/>
+        构建器: <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题: <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> ; 设计者: <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> ; 修改者: FlameTech6
+    </section>
+    
+    <section class="ICP">
+        <a href="https://icp.gov.moe/?keyword=20250814" target="_blank"><img src="https://icp.gov.moe/images/ico64.png" width="20" height="20" style="vertical-align: middle; margin-right: 5px;">萌ICP备20250814号</a>
+        <br>
+        <a href="https://icp.we2050.com/id.php?keyword=20250814" target="_blank"><img src="https://icp.xn--kiv.fun/logo.png" width="20" height="20" style="vertical-align: middle; margin-right: 5px;">团ICP备20250814号</a>
+    </section>
 </footer>
 
 
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a4301d65509ade9293dbd647b043225cf2e84dfdadbe36cd1ca6a2861e8871e2.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
 </html>
