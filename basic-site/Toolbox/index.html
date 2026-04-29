@@ -1,17 +1,155 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
-   <meta charset="UTF-8">
-   <title>在线工具盒</title>
-<a href="AlipayQRCode">支付宝定额转账二维码生成工具</a>
-<br>
-<a href="IPQuery">查询本机IP地址及消息</a>
-<br>
-<a href="IDVerify">身份证校验位检测工具</a>
-<br>
-<a href="RSAKeyGenerator">RSA密钥对随机生成器</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>网页工具箱</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #f5f7fb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .main-layout {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0 30px 0;
+    }
+
+    .page-header {
+      margin: 0 auto;
+      width: 85%;
+      padding: 10px 0;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #1e2a3a;
+      border-left: 5px solid #3b82f6;
+      padding-left: 16px;
+      letter-spacing: -0.2px;
+    }
+
+    .framework-card {
+      margin: 10px auto 0 auto;
+      width: 70%;
+      border: 5px solid #696969;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.2s ease;
+    }
+
+    .tool-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .tool-item {
+      display: flex;
+      align-items: center;
+      padding: 16px 20px;
+      background-color: #f8f9fc;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #1e2a3a;
+      font-size: 1.05rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .tool-item::before {
+      content: "🔧";
+      margin-right: 14px;
+      font-size: 1.2rem;
+    }
+
+    .tool-item:hover {
+      border-color: #3b82f6;
+      background-color: #eff6ff;
+      transform: translateX(4px);
+    }
+
+    .tool-item:active {
+      transform: scale(0.98);
+    }
+
+    .tip-text {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: #6c757d;
+      line-height: 1.6;
+      background-color: #f1f5f9;
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 20px;
+      background-color: white;
+      border-top: 1px solid #e9ecef;
+    }
+
+    footer p {
+      text-align: center;
+      color: #4b5563;
+      padding: 12px 0;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    @media (max-width: 1200px) {
+      .framework-card {
+        width: 85%;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .framework-card {
+        width: 92%;
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="main-layout">
+    <div class="page-header">
+      <h2>网页工具箱</h2>
+    </div>
+
+    <div class="framework-card">
+      <div class="tool-list">
+        <a class="tool-item" href="AlipayQRCode">支付宝定额转账二维码生成工具</a>
+        <a class="tool-item" href="IPQuery">查询本机IP地址及详细信息</a>
+        <a class="tool-item" href="IDVerify">身份证校验位检测工具</a>
+        <a class="tool-item" href="RSAKeyGenerator">RSA密钥对随机生成工具</a>
+      </div>
+
+      <div class="tip-text">
+        💡 我们将对您的数据进行严格保密，除必要的需联网才可实现的功能外，其他的功能代码均在您的本地浏览器内执行，您的数据不会被保存到服务器
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>本网页端工具由 FlameTech6 制作</p>
+    <p>©2026 FlameTech6. All rights reserved.</p>
+  </footer>
 </body>
 </html>
