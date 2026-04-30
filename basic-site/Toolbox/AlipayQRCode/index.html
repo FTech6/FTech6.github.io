@@ -1,75 +1,410 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>支付宝定额收款码生成程序</title>
-    <link rel="stylesheet" type="text/css" href="css\input-style.css">
-</head>
-<body>
-    <h2 style="margin: auto;width: 85%;padding: 10px;">支付宝定额收款码生成程序</h2>
-    <p style="margin: auto;width: 85%;padding: 5px;"><a>本网站绝对不记录、不保存、不上传您的任何输入信息，请放心使用！</a></p>
-    <div style="margin: auto;height: 500px;width: 70%;border: 5px solid #696969;padding: 15px;margin-top: 10px;">
-        <div class="left" style="float:left;align:left;height:75%;width:40%;">
-            <p><a>请在下方输入收款方的支付宝收款ID：</a></p>
-            <input type="number" autocomplete="off" id="input_user_id" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" style="ime-mode:Disabled" value="">
-            <p><a href="https://b.alipay.com/page/store-management/infomanage" target="_new">不知道自己的收款ID?点我查询收款ID</a></p>
-            <p><a href="help.png" target="_new">查询收款ID之前，请先点我查看操作流程</a></p>
-            <p><a>请在下方输入收款金额：</a></p>
-            <input type="number" autocomplete="off" id="input_money" onkeypress="return (/[\d.]/.test(String.fromCharCode(event.keyCode)))" style="ime-mode:Disabled" value="">
-            <p><a>请在下方输入收款备注：</a></p>
-            <input type="text" autocomplete="off" id="input_note" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" style="ime-mode:Disabled" value="">
-            <button onclick="MakeQR()">生成收款码</button>
-            <br>
-        </div>
-        <div class="right" style="width:40%;height:75%;margin-left:60%;">
-            <div id="div-box" style="width:80%;margin:auto;text-align:right;"></div>
-            <script type="text/javascript">
-function MakeQR(){
-    function ClearContent() {
-      var box = document.getElementById("div-box");
-      box.innerHTML="";
-    }
-    ClearContent();
-    function log() { // 定义输出函数，将数据输出到网页上
-        for(var i=0;i<arguments.length;i++){
-            var m = arguments[i];
-            if( typeof m == 'object' ){
-                for( var k in m ){
-                    if( m.hasOwnProperty(k) ){
-                        log(k+':',m[k]);
-                    }
-                }
-            }else{
-                var box = document.getElementById("div-box");
-                var p = document.createElement('p'); // 创建新元素
-                p.innerText = m.toString();
-                box.appendChild(p);
-            }
-        }
-    }
-    
-    function isValidNumber(value) {
-        var regex = /^(?!\.?$)\d*(\.\d{0,2})?$/; // 正数，只有一个或没有小数点，小数位数不超过两位的正则表达式
-        return regex.test(value);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>支付宝定额收款码生成程序</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js">
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    var user_id = document.getElementById('input_user_id').value; // 获取输入框内容并赋值到用户ID的变量
-    var money = document.getElementById('input_money').value; // 获取输入框内容并赋值到金额的变量
-    var note = document.getElementById('input_note').value; // 获取输入框内容并赋值到备注的变量
-    if (!isValidNumber(money)) {
-        alert('输入的数字不符合要求!!!');
-    }else{
-        var QRUrl_O = "https:\/\/api.vvhan.com\/api\/qr?text=" + encodeURIComponent("alipays:\/\/platformapi\/startapp?appId=20000123&actionType=scan&" + "biz_data={\"s\":+\"money\",\"u\":+\"" + user_id + "\",\"a\":+\"" + money + "\",\"m\":\"" + note + "\"}");
-        var box1 = document.getElementById("div-box");var a = document.createElement('a');a.setAttribute('href', QRUrl_O + "&down=1");a.setAttribute('target', '_new');a.innerText = "点击此处将此收款码保存到本地";box1.appendChild(a);
-        var box2 = document.getElementById("div-box");var img = document.createElement('img');img.setAttribute('src', QRUrl_O);img.setAttribute('height', '100%');img.setAttribute('width', '100%');img.setAttribute('style', 'height:70%;width:70%;');box2.appendChild(img);
+    body {
+      font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #f5f7fb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-};
-            </script>
-        </div>
+
+    .main-layout {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0 30px 0;
+    }
+
+    .page-header {
+      margin: 0 auto;
+      width: 85%;
+      padding: 10px 0;
+    }
+
+    .page-header h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #1e2a3a;
+      border-left: 5px solid #3b82f6;
+      padding-left: 16px;
+      letter-spacing: -0.2px;
+    }
+
+    .framework-card {
+      margin: 10px auto 0 auto;
+      width: 70%;
+      border: 5px solid #696969;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      font-size: 1rem;
+      color: #334155;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 1rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      transition: border 0.2s;
+      background-color: #fff;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #3b82f6;
+    }
+
+    .help-links {
+      margin-top: 6px;
+      font-size: 0.85rem;
+      line-height: 1.8;
+    }
+
+    .help-links a {
+      color: #3b82f6;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 12px;
+    }
+
+    .help-links a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.1s;
+      font-weight: 500;
+      background-color: #e2e8f0;
+      color: #1e293b;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    button:active {
+      transform: scale(0.97);
+    }
+
+    .btn-primary {
+      background-color: #3b82f6;
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background-color: #10b981;
+      color: #fff;
+    }
+
+    .btn-download {
+      background-color: #f59e0b;
+      color: #fff;
+    }
+
+    .result-box {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f8f9fc;
+      border-radius: 8px;
+      border: 1px dashed #cbd5e1;
+      text-align: center;
+    }
+
+    .result-title {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .qrcode-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 220px;
+      margin: 10px 0;
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    #qrcode {
+      display: inline-block;
+    }
+
+    #qrcode img {
+      border: none;
+      border-radius: 8px;
+    }
+
+    .tip-text {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: #6c757d;
+      line-height: 1.6;
+      background-color: #f1f5f9;
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+
+    .privacy-note {
+      margin: 0 auto 5px auto;
+      width: 85%;
+      font-size: 0.9rem;
+      color: #6c757d;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 20px;
+      background-color: white;
+      border-top: 1px solid #e9ecef;
+    }
+
+    footer p {
+      text-align: center;
+      color: #4b5563;
+      padding: 12px 0;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    @media (max-width: 780px) {
+      .framework-card {
+        width: 92%;
+        padding: 20px;
+      }
+      .btn-group {
+        flex-direction: column;
+      }
+      button {
+        width: 100%;
+      }
+      .qrcode-container {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-layout">
+    <div class="page-header">
+      <h2>支付宝定额收款码生成程序</h2>
     </div>
+
+    <div class="framework-card">
+      <div class="form-group">
+        <label for="input_user_id">收款方支付宝收款ID</label>
+        <input type="number" id="input_user_id" placeholder="例如：2088000000000000" autocomplete="off"
+               onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" style="ime-mode:Disabled" />
+        <div class="help-links">
+          <a href="https://b.alipay.com/page/store-management/infomanage" target="_blank">
+            📘 不知道自己的收款ID? 点我查询
+          </a>
+          <a href="help.png" target="_blank">
+            🖼️ 查看操作流程截图
+          </a>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="input_money">收款金额（元）</label>
+        <input type="number" id="input_money" placeholder="例如：123.45" autocomplete="off" step="0.01"
+               onkeypress="return (/[\d.]/.test(String.fromCharCode(event.keyCode)))" style="ime-mode:Disabled" />
+      </div>
+
+      <div class="form-group">
+        <label for="input_note">收款备注（可选）</label>
+        <input type="text" id="input_note" placeholder="" autocomplete="off" />
+      </div>
+
+      <div class="btn-group">
+        <button class="btn-primary" id="generateBtn">✨ 生成收款码</button>
+        <button class="btn-secondary" id="clearBtn">🗑️ 清空重置</button>
+        <!--<button class="btn-download" id="downloadBtn">💾 下载原始二维码</button>-->
+      </div>
+
+      <div class="result-box">
+        <div class="result-title">二维码生成结果</div>
+        <div class="qrcode-container" id="qrcode">
+          <p style="color:#94a3b8;">请填写信息后点击生成二维码</p>
+        </div>
+      </div>
+
+      <div class="tip-text">
+        💡 使用说明：<br>
+        1. 输入收款方的支付宝ID<br>
+        2. 输入固定收款金额（正数，最多两位小数）<br>
+        3. 可选:填写备注信息<br>
+        4. 点击"生成收款码"，二维码在本地浏览器生成，不会上传任何数据
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>本网页端工具由 FlameTech6 制作</p>
+    <p>©2026 FlameTech6. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function() {
+      let currentQRCode = null;
+
+      const userIdInput = document.getElementById('input_user_id');
+      const moneyInput = document.getElementById('input_money');
+      const noteInput = document.getElementById('input_note');
+      const generateBtn = document.getElementById('generateBtn');
+      const clearBtn = document.getElementById('clearBtn');
+      const downloadBtn = document.getElementById('downloadBtn');
+      const qrcodeDiv = document.getElementById('qrcode');
+
+      function isValidMoney(value) {
+        const regex = /^(?!\.?$)\d+(\.\d{0,2})?$/;
+        return regex.test(value);
+      }
+
+      function buildAlipayUrl(userId, money, note) {
+        const bizData = {
+          s: "money",
+          u: userId,
+          a: money,
+          m: note || ""
+        };
+        return "alipays://platformapi/startapp?appId=20000123&actionType=scan&biz_data=" 
+               + encodeURIComponent(JSON.stringify(bizData));
+      }
+
+      function clearQRCode() {
+        qrcodeDiv.innerHTML = '<p style="color:#94a3b8;">请填写信息后点击生成二维码</p>';
+        currentQRCode = null;
+      }
+
+      // 用Blob直接下载，不创建a标签，不会跳转刷新
+      function downloadRawQRCode() {
+        const img = qrcodeDiv.querySelector('img');
+        if (!img) {
+          alert('请先生成二维码！');
+          return;
+        }
+
+        fetch(img.src)
+          .then(res => res.blob())
+          .then(blob => {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'alipay_raw_qrcode_' + new Date().getTime() + '.png';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+          });
+      }
+
+      function handleGenerate() {
+        const userId = userIdInput.value.trim();
+        const money = moneyInput.value.trim();
+        const note = noteInput.value.trim();
+
+        if (!userId) {
+          alert('请输入支付宝收款ID');
+          userIdInput.focus();
+          return;
+        }
+        if (!money) {
+          alert('请输入收款金额');
+          moneyInput.focus();
+          return;
+        }
+        if (!isValidMoney(money)) {
+          alert('输入的金额不符合要求！请输入正数，最多两位小数。');
+          moneyInput.focus();
+          return;
+        }
+
+        const alipayUrl = buildAlipayUrl(userId, money, note);
+
+        qrcodeDiv.innerHTML = '';
+        currentQRCode = null;
+
+        try {
+          currentQRCode = new QRCode(qrcodeDiv, {
+            text: alipayUrl,
+            width: 220,
+            height: 220,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.M
+          });
+        } catch (error) {
+          console.error('二维码生成失败:', error);
+          qrcodeDiv.innerHTML = '<p style="color:#ef4444;">二维码生成失败，请检查输入后重试</p>';
+        }
+      }
+
+      function handleClear() {
+        userIdInput.value = '';
+        moneyInput.value = '';
+        noteInput.value = '';
+        clearQRCode();
+        userIdInput.focus();
+      }
+
+      generateBtn.addEventListener('click', handleGenerate);
+      clearBtn.addEventListener('click', handleClear);
+      downloadBtn.addEventListener('click', downloadRawQRCode);
+
+      const allInputs = [userIdInput, moneyInput, noteInput];
+      allInputs.forEach(input => {
+        input.addEventListener('keydown', function(e) {
+          if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+            e.preventDefault();
+            handleGenerate();
+          }
+        });
+      });
+    })();
+  </script>
 </body>
-<footer style="margin-top: 20px; background-color: white;">
-    <p style="text-align: center; color: black; padding: 20px 0; font-size: 14px; margin: 0;">本网页端工具由 FlameTech6 制作</p>
-    <p style="text-align: center; color: black; padding: 20px 0; font-size: 14px; margin: 0;">©2024 FlameTech6. All rights reserved. </p>
-</footer>
 </html>
