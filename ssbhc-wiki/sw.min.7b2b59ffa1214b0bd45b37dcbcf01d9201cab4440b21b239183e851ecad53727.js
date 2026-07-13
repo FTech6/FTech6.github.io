@@ -1,0 +1,1 @@
+navigator.serviceWorker&&navigator.serviceWorker.register("/ssbhc-wiki/sw.js",{scope:"/ssbhc-wiki/"})

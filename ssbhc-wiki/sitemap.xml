@@ -2,74 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/</loc>
   </url><url>
-    <loc>http://localhost:8080/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/section/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/section/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/</loc>
   </url><url>
-    <loc>http://localhost:8080/categories/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/categories/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/</loc>
   </url><url>
-    <loc>http://localhost:8080/tags/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/tags/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E6%9C%AC%E7%AB%99%E7%8E%B0%E5%86%B5/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E6%9C%AC%E7%AB%99%E7%8E%B0%E5%86%B5/</loc>
   </url><url>
-    <loc>http://localhost:8080/book/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/book/</loc>
   </url><url>
-    <loc>http://localhost:8080/contact/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/contact/</loc>
   </url><url>
-    <loc>http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/</loc>
+    <loc>http://localhost:8080/ssbhc-wiki/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/</loc>
   </url>
 </urlset>

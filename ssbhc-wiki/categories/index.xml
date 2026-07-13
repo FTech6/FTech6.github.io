@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Categories on 时尚百货城 Wiki</title>
-		<link>http://localhost:8080/categories/</link>
+		<link>http://localhost:8080/ssbhc-wiki/categories/</link>
 		<description>Recent content in Categories on 时尚百货城 Wiki</description>
 		<generator>Hugo</generator>
 		<language>zh</language>
@@ -12,6 +12,6 @@
 			<copyright>FlameTech6. All rights reserved.</copyright>
 		
 		
-			<atom:link href="http://localhost:8080/categories/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:8080/ssbhc-wiki/categories/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>
