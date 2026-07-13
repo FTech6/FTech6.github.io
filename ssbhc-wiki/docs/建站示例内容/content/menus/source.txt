@@ -1,0 +1,96 @@
+时尚百货城 Wiki
+
+- Docs: http://localhost:8080/docs/
+- 本站现况: http://localhost:8080/docs/%E6%9C%AC%E7%AB%99%E7%8E%B0%E5%86%B5/
+- 建站示例内容: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/
+- Introduction: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/
+- Create a Site: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/
+- Configuration: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/
+- Organisation: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/
+- Pages: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/
+- Menus: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/
+- Blog: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/
+- Multi-Language: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/
+- Shortcodes: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/
+- Asciinema: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/
+- Buttons: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/
+- Columns: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/
+- Details: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/
+- Images: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/
+- OpenAPI: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/
+- Hints: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/
+- Mermaid: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/
+- Steps: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/
+- Tabs: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/
+- KaTeX: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/
+- Styles: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/
+- Inject Partials: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/
+
+
+# Menu System
+
+Hugo Book supports two types of menus: an automatic file-tree menu built from your content structure, and Hugo's standard menu system for additional navigation.
+
+## File-Tree Menu
+
+The sidebar menu is automatically generated from pages in the `BookSection` directory (default: `docs/`). The hierarchy mirrors your directory structure.
+
+Control how sections appear with [page frontmatter](/docs/content/pages/).
+
+## Hugo Menus
+
+The theme renders three Hugo menu locations:
+
+| Menu | Location 
+| --   | -- 
+| `menu.before` | Rendered **above** the file-tree menu.
+| `menu.after`  | Rendered **below** the file-tree menu.
+| `menu.home`   | Rendered on the landing page header (only on pages with `layout: landing`).
+
+### Configuration
+
+Define menus in your site config
+
+```toml {filename=hugo.toml}
+[[menu.before]]
+  name = 'Overview'
+  url = '/overview/'
+  weight = 1
+
+[[menu.after]]
+  name = 'Github'
+  url = 'https://github.com/user/repo'
+  weight = 10
+
+[[menu.after]]
+  name = 'Hugo Themes'
+  url = 'https://themes.gohugo.io/themes/hugo-book/'
+  weight = 20
+```
+
+Or add pages to menus via frontmatter
+
+```yaml
+---
+title: Blog
+menu:
+  after:
+    weight: 5
+---
+```
+
+### Menu Item Parameters
+
+Menu items support these params under `[params]`:
+
+```toml {filename=hugo.toml}
+[[menu.after]]
+  name = 'Example'
+  url = '/example/'
+  weight = 10
+  [menu.after.params]
+    bookIcon = 'star'       # Icon name to display next to the item
+    bookNewTab = true        # Open the link in a new tab
+    class = 'custom-class'   # CSS class to add to the menu item
+```
+

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Inject Partials# The theme provides empty partial templates at key points in the page layout. Override these to inject custom HTML without modifying the base templates.
+Create matching files in your project’s layouts/_partials/docs/inject/ directory.
+Partial Location inject/head.html Inside &lt;head&gt;, e.g. meta tags, stylesheets, scripts inject/body.html Before &lt;/body&gt;, e.g. analytics, chat widgets, scripts inject/menu-before.html Before the sidebar menu inject/menu-after.html After the sidebar menu inject/content-before.html Before the page content inject/content-after.html After the page content inject/toc-before.html Before the table of contents inject/toc-after.html After the table of contents inject/footer.html Inside the page footer Example# To add a Google Analytics script, create layouts/_partials/docs/inject/head.html
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/">
+	<meta property="og:site_name" content="时尚百货城 Wiki">
+	<meta property="og:title" content="Inject Partials">
+	<meta property="og:description" content="Inject Partials# The theme provides empty partial templates at key points in the page layout. Override these to inject custom HTML without modifying the base templates.
+Create matching files in your project’s layouts/_partials/docs/inject/ directory.
+Partial Location inject/head.html Inside &lt;head&gt;, e.g. meta tags, stylesheets, scripts inject/body.html Before &lt;/body&gt;, e.g. analytics, chat widgets, scripts inject/menu-before.html Before the sidebar menu inject/menu-after.html After the sidebar menu inject/content-before.html Before the page content inject/content-after.html After the page content inject/toc-before.html Before the table of contents inject/toc-after.html After the table of contents inject/footer.html Inside the page footer Example# To add a Google Analytics script, create layouts/_partials/docs/inject/head.html">
+	<meta property="og:locale" content="zh">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="docs">
+
+
+	<meta itemprop="name" content="Inject Partials">
+	<meta itemprop="description" content="Inject Partials# The theme provides empty partial templates at key points in the page layout. Override these to inject custom HTML without modifying the base templates.
+Create matching files in your project’s layouts/_partials/docs/inject/ directory.
+Partial Location inject/head.html Inside &lt;head&gt;, e.g. meta tags, stylesheets, scripts inject/body.html Before &lt;/body&gt;, e.g. analytics, chat widgets, scripts inject/menu-before.html Before the sidebar menu inject/menu-after.html After the sidebar menu inject/content-before.html Before the page content inject/content-after.html After the page content inject/toc-before.html Before the table of contents inject/toc-after.html After the table of contents inject/footer.html Inside the page footer Example# To add a Google Analytics script, create layouts/_partials/docs/inject/head.html">
+	<meta itemprop="wordCount" content="133">
+
+<title>Inject Partials • 时尚百货城 Wiki</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/">
+<link rel="stylesheet" href="/book.min.98c83e4c8e1c8661368bcb29bbaf4dcc9d31b8164f76aae322d82d86a9750c65.css" integrity="sha256-mMg&#43;TI4chmE2i8spu69NzJ0xuBZPdqrjItgthql1DGU=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/zh.search.min.67606e2ddee7a0baf3d917c67fd6ddc124ac8c07585152839d422470fbb9612c.js" integrity="sha256-Z2BuLd7noLrz2RfGf9bdwSSsjAdYUVKDnUIkcPu5YSw=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<link rel="alternate" type="text/plain" href="http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/source.txt" title="Inject Partials" />
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>时尚百货城 Wiki</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="搜索"
+    aria-label="搜索"
+    maxlength="64" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%AC%E7%AB%99%E7%8E%B0%E5%86%B5/" class="">
+      本站现况</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/" class="">
+      建站示例内容</a>
+  
+
+          
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/rocket.svg" class="book-icon" alt="rocket" />Getting Started</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/" class="">
+      Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/" class="">
+      Create a Site</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/" class="">
+      Configuration</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/edit.svg" class="book-icon" alt="edit" />Content &amp; Structure</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/" class="">
+      Organisation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/" class="">
+      Pages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/" class="">
+      Menus</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/" class="">
+      Blog</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/" class="">
+      Multi-Language</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b772a1a58aa03c20a4dc3de2b917ee40" class="toggle"  />
+    <label for="section-b772a1a58aa03c20a4dc3de2b917ee40" class="flex">
+      <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/" class="">
+        Shortcodes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/" class="">
+      Asciinema</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/" class="">
+      Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/" class="">
+      Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/" class="">
+      Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-08b2ca623cd142e05588b9bfd6953983" class="toggle"  />
+    <label for="section-08b2ca623cd142e05588b9bfd6953983" class="flex">
+      <a role="button" class="">
+        Experimental</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/" class="">
+      Images</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/" class="">
+      OpenAPI</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/" class="">
+      Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/" class="">
+      Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/" class="">
+      Steps</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/" class="">
+      Tabs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/" class="">
+      KaTeX</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/apparel.svg" class="book-icon" alt="apparel" />Customization</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/" class="">
+      Styles</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/" class="active">
+      Inject Partials</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="/book/" title="单页显示">单页显示</a></li></ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Inject Partials</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#inject-partials">Inject Partials</a>
+      <ul>
+        <li><a href="#example">Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="inject-partials">Inject Partials<a class="anchor" href="#inject-partials">#</a></h1>
+<p>The theme provides empty partial templates at key points in the page layout. Override these to inject custom HTML without modifying the base templates.</p>
+<p>Create matching files in your project&rsquo;s <code>layouts/_partials/docs/inject/</code> directory.</p>
+<table>
+	<thead>
+			<tr>
+					<th>Partial</th>
+					<th>Location</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>inject/head.html</code></td>
+					<td>Inside <code>&lt;head&gt;</code>, e.g. meta tags, stylesheets, scripts</td>
+			</tr>
+			<tr>
+					<td><code>inject/body.html</code></td>
+					<td>Before <code>&lt;/body&gt;</code>, e.g. analytics, chat widgets, scripts</td>
+			</tr>
+			<tr>
+					<td><code>inject/menu-before.html</code></td>
+					<td>Before the sidebar menu</td>
+			</tr>
+			<tr>
+					<td><code>inject/menu-after.html</code></td>
+					<td>After the sidebar menu</td>
+			</tr>
+			<tr>
+					<td><code>inject/content-before.html</code></td>
+					<td>Before the page content</td>
+			</tr>
+			<tr>
+					<td><code>inject/content-after.html</code></td>
+					<td>After the page content</td>
+			</tr>
+			<tr>
+					<td><code>inject/toc-before.html</code></td>
+					<td>Before the table of contents</td>
+			</tr>
+			<tr>
+					<td><code>inject/toc-after.html</code></td>
+					<td>After the table of contents</td>
+			</tr>
+			<tr>
+					<td><code>inject/footer.html</code></td>
+					<td>Inside the page footer</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<p>To add a Google Analytics script, create <code>layouts/_partials/docs/inject/head.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ with .Site.Params.googleAnalytics }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff6ac1">script</span> <span style="color:#57c7ff">async</span> <span style="color:#57c7ff">src</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;https://www.googletagmanager.com/gtag/js?id={{ . }}&#34;</span>&gt;&lt;/<span style="color:#ff6ac1">script</span>&gt;
+</span></span><span style="display:flex;"><span>{{ end }}</span></span></code></pre></div><p>To add a custom banner above every page, create <code>layouts/_partials/docs/inject/content-before.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#ff6ac1">div</span> <span style="color:#57c7ff">class</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;my-banner&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  This documentation is for version 2.0. See &lt;<span style="color:#ff6ac1">a</span> <span style="color:#57c7ff">href</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;/v1/&#34;</span>&gt;version 1.0 docs&lt;/<span style="color:#ff6ac1">a</span>&gt;.
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff6ac1">div</span>&gt;</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+  <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/%5Ccontent.zh%5Cdocs%5C%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9%5Ccustomization%5Cinject-partials.md" target="_blank" rel="noopener edit">
+    <img src="/icons/edit.svg" class="book-icon" alt="Edit" />
+    <span>编辑本页</span>
+  </a>
+
+</div>
+
+</div>
+
+<div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Styles</span>
+      </a>
+    
+    </span>
+    <span>
+    
+    </span>
+  </div>
+
+ 
+        
+  
+ 
+        
+        
+  
+  <div class="book-copyright flex justify-center">
+    <small>时尚百货城 Wiki - FlameTech6. All rights reserved.</small>
+
+  </div>
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#inject-partials">Inject Partials</a>
+      <ul>
+        <li><a href="#example">Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

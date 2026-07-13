@@ -1,0 +1,28 @@
+时尚百货城 Wiki
+
+- Docs: http://localhost:8080/docs/
+- 示例内容: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/
+- Introduction: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/
+- Create a Site: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/
+- Configuration: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/
+- Organisation: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/
+- Pages: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/
+- Menus: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/
+- Blog: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/
+- Multi-Language: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/
+- Shortcodes: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/
+- Asciinema: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/
+- Buttons: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/
+- Columns: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/
+- Details: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/
+- Images: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/
+- OpenAPI: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/
+- Hints: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/
+- Mermaid: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/
+- Steps: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/
+- Tabs: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/
+- KaTeX: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/
+- Styles: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/
+- Inject Partials: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/
+
+建站示例内容文件夹

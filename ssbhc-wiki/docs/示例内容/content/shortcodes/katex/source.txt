@@ -1,0 +1,100 @@
+时尚百货城 Wiki
+
+- Docs: http://localhost:8080/docs/
+- 示例内容: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/
+- Introduction: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/
+- Create a Site: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/
+- Configuration: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/
+- Organisation: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/
+- Pages: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/
+- Menus: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/
+- Blog: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/
+- Multi-Language: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/
+- Shortcodes: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/
+- Asciinema: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/
+- Buttons: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/
+- Columns: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/
+- Details: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/
+- Images: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/
+- OpenAPI: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/
+- Hints: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/
+- Mermaid: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/
+- Steps: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/
+- Tabs: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/
+- KaTeX: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/
+- Styles: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/
+- Inject Partials: http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/
+
+
+# KaTeX
+
+Render math typesetting with [KaTeX](https://katex.org/). The library is loaded automatically on first use.
+
+{{< katex />}}
+
+## Activation
+
+KaTeX is activated on the page by the first use of the shortcode or a `katex` code block. You can force activation with `{{</* katex /*/>}}`, then use delimiters anywhere on the page.
+
+## Block Rendering
+
+Three equivalent ways to render display math:
+
+{{% columns %}}
+
+- **Shortcode**
+  ```tpl
+  {{</* katex display=true >}}
+  f(x) = \int_{-\infty}^\infty
+  \hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+  {{< /katex */>}}
+  ```
+
+- **Code block**
+  ````
+  ```katex
+  f(x) = \int_{-\infty}^\infty
+  \hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+  ```
+  ````
+
+- **Dollar delimiters**
+  ```
+  $$
+  f(x) = \int_{-\infty}^\infty
+  \hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+  $$
+  ```
+
+{{% /columns %}}
+
+Result:
+
+$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+$$
+
+## Inline Rendering
+
+| Syntax | Output |
+| -- | -- |
+| `{{</* katex >}}\pi(x){{< /katex */>}}` | {{< katex >}}\pi(x){{< /katex >}} |
+| `\\( \pi(x) \\)` | \\( \pi(x) \\) |
+
+## Configuration
+
+Override KaTeX options by creating `assets/katex.json`. For example, to enable `$...$` inline delimiters
+
+```json
+{
+  "delimiters": [
+    {"left": "$$", "right": "$$", "display": true},
+    {"left": "$", "right": "$", "display": false},
+    {"left": "\\(", "right": "\\)", "display": false},
+    {"left": "\\[", "right": "\\]", "display": true}
+  ]
+}
+```
+
+See [KaTeX options](https://katex.org/docs/options.html) for all available settings.
+

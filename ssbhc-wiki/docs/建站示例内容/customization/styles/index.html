@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Styles# Built-in Themes# Set BookTheme in your site config
+hugo.toml [params] BookTheme = &#39;light&#39; # or &#39;dark&#39;, &#39;auto&#39; Theme Description light Default. Light background with dark text. dark Dark background (Nord palette) with light text. auto Switches between light and dark based on OS/browser preference (prefers-color-scheme). Plugin Themes# Additional themes are available as SCSS plugins. Import in your assets/_custom.scss
+@import &#34;plugins/themes&#34;;Then set BookTheme to one of:
+Theme Description contrast-light High contrast light variant contrast-dark High contrast dark variant contrast-auto High contrast, auto-switching catppuccin-light Catppuccin Latte palette catppuccin-dark Catppuccin Frappe palette catppuccin-auto Catppuccin, auto-switching ayu-light Ayu light palette ayu-dark Ayu mirage dark palette ayu-auto Ayu, auto-switching Custom Theme# Define a theme mixin in assets/_custom.scss
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/">
+	<meta property="og:site_name" content="时尚百货城 Wiki">
+	<meta property="og:title" content="Styles">
+	<meta property="og:description" content="Styles# Built-in Themes# Set BookTheme in your site config
+hugo.toml [params] BookTheme = &#39;light&#39; # or &#39;dark&#39;, &#39;auto&#39; Theme Description light Default. Light background with dark text. dark Dark background (Nord palette) with light text. auto Switches between light and dark based on OS/browser preference (prefers-color-scheme). Plugin Themes# Additional themes are available as SCSS plugins. Import in your assets/_custom.scss
+@import &#34;plugins/themes&#34;;Then set BookTheme to one of:
+Theme Description contrast-light High contrast light variant contrast-dark High contrast dark variant contrast-auto High contrast, auto-switching catppuccin-light Catppuccin Latte palette catppuccin-dark Catppuccin Frappe palette catppuccin-auto Catppuccin, auto-switching ayu-light Ayu light palette ayu-dark Ayu mirage dark palette ayu-auto Ayu, auto-switching Custom Theme# Define a theme mixin in assets/_custom.scss">
+	<meta property="og:locale" content="zh">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="docs">
+
+
+	<meta itemprop="name" content="Styles">
+	<meta itemprop="description" content="Styles# Built-in Themes# Set BookTheme in your site config
+hugo.toml [params] BookTheme = &#39;light&#39; # or &#39;dark&#39;, &#39;auto&#39; Theme Description light Default. Light background with dark text. dark Dark background (Nord palette) with light text. auto Switches between light and dark based on OS/browser preference (prefers-color-scheme). Plugin Themes# Additional themes are available as SCSS plugins. Import in your assets/_custom.scss
+@import &#34;plugins/themes&#34;;Then set BookTheme to one of:
+Theme Description contrast-light High contrast light variant contrast-dark High contrast dark variant contrast-auto High contrast, auto-switching catppuccin-light Catppuccin Latte palette catppuccin-dark Catppuccin Frappe palette catppuccin-auto Catppuccin, auto-switching ayu-light Ayu light palette ayu-dark Ayu mirage dark palette ayu-auto Ayu, auto-switching Custom Theme# Define a theme mixin in assets/_custom.scss">
+	<meta itemprop="wordCount" content="323">
+
+<title>Styles • 时尚百货城 Wiki</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/">
+<link rel="stylesheet" href="/book.min.98c83e4c8e1c8661368bcb29bbaf4dcc9d31b8164f76aae322d82d86a9750c65.css" integrity="sha256-mMg&#43;TI4chmE2i8spu69NzJ0xuBZPdqrjItgthql1DGU=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/zh.search.min.67606e2ddee7a0baf3d917c67fd6ddc124ac8c07585152839d422470fbb9612c.js" integrity="sha256-Z2BuLd7noLrz2RfGf9bdwSSsjAdYUVKDnUIkcPu5YSw=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<link rel="alternate" type="text/plain" href="http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/source.txt" title="Styles" />
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>时尚百货城 Wiki</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="搜索"
+    aria-label="搜索"
+    maxlength="64" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%AC%E7%AB%99%E7%8E%B0%E5%86%B5/" class="">
+      本站现况</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/" class="">
+      建站示例内容</a>
+  
+
+          
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/rocket.svg" class="book-icon" alt="rocket" />Getting Started</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/" class="">
+      Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/" class="">
+      Create a Site</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/" class="">
+      Configuration</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/edit.svg" class="book-icon" alt="edit" />Content &amp; Structure</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/" class="">
+      Organisation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/" class="">
+      Pages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/" class="">
+      Menus</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/" class="">
+      Blog</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/" class="">
+      Multi-Language</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b772a1a58aa03c20a4dc3de2b917ee40" class="toggle"  />
+    <label for="section-b772a1a58aa03c20a4dc3de2b917ee40" class="flex">
+      <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/" class="">
+        Shortcodes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/" class="">
+      Asciinema</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/" class="">
+      Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/" class="">
+      Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/" class="">
+      Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-08b2ca623cd142e05588b9bfd6953983" class="toggle"  />
+    <label for="section-08b2ca623cd142e05588b9bfd6953983" class="flex">
+      <a role="button" class="">
+        Experimental</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/" class="">
+      Images</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/" class="">
+      OpenAPI</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/" class="">
+      Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/" class="">
+      Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/" class="">
+      Steps</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/" class="">
+      Tabs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/" class="">
+      KaTeX</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/apparel.svg" class="book-icon" alt="apparel" />Customization</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/" class="active">
+      Styles</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/" class="">
+      Inject Partials</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="/book/" title="单页显示">单页显示</a></li></ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Styles</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#styles">Styles</a>
+      <ul>
+        <li><a href="#built-in-themes">Built-in Themes</a></li>
+        <li><a href="#plugin-themes">Plugin Themes</a></li>
+        <li><a href="#custom-theme">Custom Theme</a></li>
+        <li><a href="#css-custom-properties">CSS Custom Properties</a></li>
+        <li><a href="#custom-styles">Custom Styles</a></li>
+        <li><a href="#scss-plugins">SCSS Plugins</a></li>
+        <li><a href="#scss-variables">SCSS Variables</a></li>
+        <li><a href="#override-priority">Override Priority</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="styles">Styles<a class="anchor" href="#styles">#</a></h1>
+<h2 id="built-in-themes">Built-in Themes<a class="anchor" href="#built-in-themes">#</a></h2>
+<p>Set <code>BookTheme</code> in your site config</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  BookTheme = <span style="color:#5af78e">&#39;light&#39;</span>  <span style="color:#78787e"># or &#39;dark&#39;, &#39;auto&#39;</span></span></span></code></pre></div><table>
+	<thead>
+			<tr>
+					<th>Theme</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>light</code></td>
+					<td>Default. Light background with dark text.</td>
+			</tr>
+			<tr>
+					<td><code>dark</code></td>
+					<td>Dark background (Nord palette) with light text.</td>
+			</tr>
+			<tr>
+					<td><code>auto</code></td>
+					<td>Switches between light and dark based on OS/browser preference (<code>prefers-color-scheme</code>).</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="plugin-themes">Plugin Themes<a class="anchor" href="#plugin-themes">#</a></h2>
+<p>Additional themes are available as SCSS plugins. Import in your <code>assets/_custom.scss</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#ff6ac1">@import</span> <span style="color:#5af78e">&#34;plugins/themes&#34;</span>;</span></span></code></pre></div><p>Then set <code>BookTheme</code> to one of:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Theme</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>contrast-light</code></td>
+					<td>High contrast light variant</td>
+			</tr>
+			<tr>
+					<td><code>contrast-dark</code></td>
+					<td>High contrast dark variant</td>
+			</tr>
+			<tr>
+					<td><code>contrast-auto</code></td>
+					<td>High contrast, auto-switching</td>
+			</tr>
+			<tr>
+					<td><code>catppuccin-light</code></td>
+					<td><a href="https://catppuccin.com/">Catppuccin</a> Latte palette</td>
+			</tr>
+			<tr>
+					<td><code>catppuccin-dark</code></td>
+					<td>Catppuccin Frappe palette</td>
+			</tr>
+			<tr>
+					<td><code>catppuccin-auto</code></td>
+					<td>Catppuccin, auto-switching</td>
+			</tr>
+			<tr>
+					<td><code>ayu-light</code></td>
+					<td><a href="https://github.com/ayu-theme">Ayu</a> light palette</td>
+			</tr>
+			<tr>
+					<td><code>ayu-dark</code></td>
+					<td>Ayu mirage dark palette</td>
+			</tr>
+			<tr>
+					<td><code>ayu-auto</code></td>
+					<td>Ayu, auto-switching</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="custom-theme">Custom Theme<a class="anchor" href="#custom-theme">#</a></h2>
+<p>Define a theme mixin in <code>assets/_custom.scss</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#ff6ac1">@mixin</span><span style="color:#57c7ff"> theme-mytheme</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">--body-background</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">#fafafa</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">--body-font-color</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">#333</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">--color-link</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">#0066cc</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">--color-visited-link</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">#6633cc</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Then set <code>BookTheme = 'mytheme'</code>. The theme uses <code>@include theme-{{ .Site.Params.BookTheme }}</code> to select the mixin at build time.</p>
+<p>For auto-switching themes (light/dark based on OS preference), see the <code>theme-auto</code> mixin in <code>assets/_defaults.scss</code> as a reference.</p>
+<h2 id="css-custom-properties">CSS Custom Properties<a class="anchor" href="#css-custom-properties">#</a></h2>
+<p>Override CSS custom properties in <code>_custom.scss</code> to adjust the current theme. The full set of properties is defined in <a href="https://github.com/alex-shpak/hugo-book/blob/main/assets/_defaults.scss"><code>assets/_defaults.scss</code></a>.</p>
+<h2 id="custom-styles">Custom Styles<a class="anchor" href="#custom-styles">#</a></h2>
+<p>The theme includes an empty <code>assets/_custom.scss</code> file that is loaded after all theme styles. Create this file in your project&rsquo;s <code>assets/</code> directory to add custom CSS without overriding the entire stylesheet.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#78787e">// assets/_custom.scss
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f3f99d">.book-page</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">max-width</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">60</span><span style="color:#9aedfe">rem</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f3f99d">.book-menu</span> <span style="color:#ff6ac1">nav</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">font-size</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">0</span><span style="color:#ff9f43">.9</span><span style="color:#9aedfe">rem</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h2 id="scss-plugins">SCSS Plugins<a class="anchor" href="#scss-plugins">#</a></h2>
+<p>The theme ships with optional SCSS plugins. Import them in your <code>_custom.scss</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#ff6ac1">@import</span> <span style="color:#5af78e">&#34;plugins/numbered&#34;</span>; <span style="color:#78787e">/* Automatically number headings in the content area */</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">@import</span> <span style="color:#5af78e">&#34;plugins/scrollbars&#34;</span>; <span style="color:#78787e">/* Style scrollbars in the sidebar and content area */</span></span></span></code></pre></div><h2 id="scss-variables">SCSS Variables<a class="anchor" href="#scss-variables">#</a></h2>
+<p>Layout variables like sidebar width, breakpoints, and padding are defined in <a href="https://github.com/alex-shpak/hugo-book/blob/main/assets/_defaults.scss"><code>assets/_defaults.scss</code></a>. Override them in your <code>_custom.scss</code>.</p>
+<h2 id="override-priority">Override Priority<a class="anchor" href="#override-priority">#</a></h2>
+<p>Hugo&rsquo;s <a href="https://gohugo.io/templates/lookup-order/">lookup order</a> lets you override any theme file by creating the same file in your project:</p>
+<ul>
+<li><code>layouts/</code>: Override templates and partials</li>
+<li><code>assets/</code>: Override SCSS and JavaScript</li>
+<li><code>static/</code>: Override static files (favicon, images)</li>
+<li><code>i18n/</code>: Override or add translations</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+  <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/%5Ccontent.zh%5Cdocs%5C%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9%5Ccustomization%5Cstyles.md" target="_blank" rel="noopener edit">
+    <img src="/icons/edit.svg" class="book-icon" alt="Edit" />
+    <span>编辑本页</span>
+  </a>
+
+</div>
+
+</div>
+
+<div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>KaTeX</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/" class="flex align-center">
+        <span>Inject Partials</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+
+ 
+        
+  
+ 
+        
+        
+  
+  <div class="book-copyright flex justify-center">
+    <small>时尚百货城 Wiki - FlameTech6. All rights reserved.</small>
+
+  </div>
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#styles">Styles</a>
+      <ul>
+        <li><a href="#built-in-themes">Built-in Themes</a></li>
+        <li><a href="#plugin-themes">Plugin Themes</a></li>
+        <li><a href="#custom-theme">Custom Theme</a></li>
+        <li><a href="#css-custom-properties">CSS Custom Properties</a></li>
+        <li><a href="#custom-styles">Custom Styles</a></li>
+        <li><a href="#scss-plugins">SCSS Plugins</a></li>
+        <li><a href="#scss-variables">SCSS Variables</a></li>
+        <li><a href="#override-priority">Override Priority</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

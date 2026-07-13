@@ -1,0 +1,60 @@
+时尚百货城 Wiki
+
+- Docs: http://localhost:8080/docs/
+- 本站现况: http://localhost:8080/docs/%E6%9C%AC%E7%AB%99%E7%8E%B0%E5%86%B5/
+- 建站示例内容: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/
+- Introduction: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/
+- Create a Site: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/
+- Configuration: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/
+- Organisation: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/
+- Pages: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/
+- Menus: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/
+- Blog: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/
+- Multi-Language: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/
+- Shortcodes: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/
+- Asciinema: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/
+- Buttons: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/
+- Columns: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/
+- Details: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/
+- Images: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/
+- OpenAPI: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/
+- Hints: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/
+- Mermaid: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/
+- Steps: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/
+- Tabs: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/
+- KaTeX: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/
+- Styles: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/
+- Inject Partials: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/
+
+
+<div class="book-hero text-left">
+
+# 关于
+
+## 创站日期
+2026/07/14 (YYYY-MM-DD)
+
+## 运营人员
+* 站长：*FlameTech6* ( *FTech6* )
+* 运维：*FlameTech6* ( *FTech6* )
+* 开发：*FlameTech6* ( *FTech6* )
+
+## 联系我们
+
+#### *FlameTech6*
+|     渠道     |          信息           |
+| ----------- | ---------------------- |
+| 电邮① (推荐) | FlameTech6@outlook.com |
+| 电邮②        | FlameTech6@hotmail.com |
+| 微信/WeChat  | FTech6                 |
+
+## 投稿方式
+联系 *FlameTech6* ，发送您编写的稿件（可以无格式或使用其他格式，但推荐使用 *Markdown* 格式），即可完成投稿。
+
+若您的稿件通过审核，我们将给您投稿时所使用的联系方式发送提示信息，并将您的投稿收录于站内。
+
+注：投稿的内容是否使用 *Markdown* 格式编写并不会影响您稿件的审核/收录，您有权利使用任何格式来编写您的稿件(包括但不限于：无格式，TXT，Word，PDF)，但最终收录时我们将对您的稿件进行适当的修改，以使其变为 *Markdown* 格式。
+
+## 版权声明
+所有人在本站上投稿发布的任意内容均遵循开源协议 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans) 。按照此协议，由某用户投稿的内容之著作权归该用户(内容的作者)所有，详细内容点击蓝色字体。
+<div>

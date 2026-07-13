@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Single Page Layout# This page uses layout: book, which renders all content on a single page without sidebar navigation.
+Use this layout for standalone pages that don’t belong in the documentation hierarchy, such as:
+Changelog or release notes A comprehensive reference that should be scrollable as one document Print-friendly pages Configuration# Set in frontmatter:
+--- layout: book ---The page can still appear in menus via the menu frontmatter parameter:
+--- layout: book menu: after: weight: 7 ---">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:8080/book/">
+	<meta property="og:site_name" content="时尚百货城 Wiki">
+	<meta property="og:title" content="单页显示">
+	<meta property="og:description" content="Single Page Layout# This page uses layout: book, which renders all content on a single page without sidebar navigation.
+Use this layout for standalone pages that don’t belong in the documentation hierarchy, such as:
+Changelog or release notes A comprehensive reference that should be scrollable as one document Print-friendly pages Configuration# Set in frontmatter:
+--- layout: book ---The page can still appear in menus via the menu frontmatter parameter:
+--- layout: book menu: after: weight: 7 ---">
+	<meta property="og:locale" content="zh">
+	<meta property="og:type" content="article">
+
+
+	<meta itemprop="name" content="单页显示">
+	<meta itemprop="description" content="Single Page Layout# This page uses layout: book, which renders all content on a single page without sidebar navigation.
+Use this layout for standalone pages that don’t belong in the documentation hierarchy, such as:
+Changelog or release notes A comprehensive reference that should be scrollable as one document Print-friendly pages Configuration# Set in frontmatter:
+--- layout: book ---The page can still appear in menus via the menu frontmatter parameter:
+--- layout: book menu: after: weight: 7 ---">
+	<meta itemprop="wordCount" content="77">
+
+<title>单页显示 • 时尚百货城 Wiki</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:8080/book/">
+<link rel="stylesheet" href="/book.min.98c83e4c8e1c8661368bcb29bbaf4dcc9d31b8164f76aae322d82d86a9750c65.css" integrity="sha256-mMg&#43;TI4chmE2i8spu69NzJ0xuBZPdqrjItgthql1DGU=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/zh.search.min.67606e2ddee7a0baf3d917c67fd6ddc124ac8c07585152839d422470fbb9612c.js" integrity="sha256-Z2BuLd7noLrz2RfGf9bdwSSsjAdYUVKDnUIkcPu5YSw=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<link rel="alternate" type="text/plain" href="http://localhost:8080/book/source.txt" title="单页显示" />
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-page book-layout-book">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>单页显示</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  <h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>时尚百货城 Wiki</span>
+  </a>
+</h2>
+
+  <nav id="TableOfContents">
+    <ul>
+      <li>
+        <a href="#docs">Docs</a>
+      </li>
+      
+      <li>
+        <a href="#%e6%9c%ac%e7%ab%99%e7%8e%b0%e5%86%b5">本站现况</a>
+      </li>
+      
+      <li>
+        <a href="#%e5%bb%ba%e7%ab%99%e7%a4%ba%e4%be%8b%e5%86%85%e5%ae%b9">建站示例内容</a>
+      </li>
+      
+      <li>
+        <a href="#introduction">Introduction</a>
+      </li>
+      
+      <li>
+        <a href="#create-a-site">Create a Site</a>
+      </li>
+      
+      <li>
+        <a href="#configuration">Configuration</a>
+      </li>
+      
+      <li>
+        <a href="#organisation">Organisation</a>
+      </li>
+      
+      <li>
+        <a href="#pages">Pages</a>
+      </li>
+      
+      <li>
+        <a href="#menus">Menus</a>
+      </li>
+      
+      <li>
+        <a href="#blog">Blog</a>
+      </li>
+      
+      <li>
+        <a href="#multi-language">Multi-Language</a>
+      </li>
+      
+      <li>
+        <a href="#shortcodes">Shortcodes</a>
+      </li>
+      
+      <li>
+        <a href="#asciinema">Asciinema</a>
+      </li>
+      
+      <li>
+        <a href="#buttons">Buttons</a>
+      </li>
+      
+      <li>
+        <a href="#columns">Columns</a>
+      </li>
+      
+      <li>
+        <a href="#details">Details</a>
+      </li>
+      
+      <li>
+        <a href="#images">Images</a>
+      </li>
+      
+      <li>
+        <a href="#openapi">OpenAPI</a>
+      </li>
+      
+      <li>
+        <a href="#hints">Hints</a>
+      </li>
+      
+      <li>
+        <a href="#mermaid">Mermaid</a>
+      </li>
+      
+      <li>
+        <a href="#steps">Steps</a>
+      </li>
+      
+      <li>
+        <a href="#tabs">Tabs</a>
+      </li>
+      
+      <li>
+        <a href="#katex">KaTeX</a>
+      </li>
+      
+      <li>
+        <a href="#styles">Styles</a>
+      </li>
+      
+      <li>
+        <a href="#inject-partials">Inject Partials</a>
+      </li>
+      
+    </ul>
+  </nav>
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown">
+    <section id="docs"><p><strong>这里是 <em>时尚百货城 Wiki</em> 的引导页</strong></p>
+<hr>
+<ul>
+<li>您可以在左侧的各级目录中尝试找到您希望阅览的内容。</li>
+<li>您也可以在左侧的 <em>搜索</em> 输入框中输入您希望阅览的内容，并在搜索结果中找到并点选它。</li>
+<li>若您找不到您希望阅览的内容，可能是该内容尚未被收录，也可能是您的搜索词不太恰当，您可以尝试联系我们，在各级目录中查找，抑或是换个搜索词。</li>
+</ul>
+</section>
+  
+    <section id="本站现况"><p><strong>本站点还在建设当中，内容正在编写当中，敬请期待！</strong></p>
+<blockquote class='book-hint '>
+<p><strong>BJT 2026/07/14 04:16 示</strong></p>
+</blockquote></section>
+  
+    <section id="建站示例内容"><p>此为建站示例内容文件夹</p>
+</section>
+  
+    <section id="introduction"><h1 id="introduction">Introduction<a class="anchor" href="#introduction">#</a></h1>
+<p>Hugo Book is a documentation theme for <a href="https://gohugo.io">Hugo</a>. It provides a clean, readable layout for technical docs with minimal dependencies and no build tooling beyond Hugo itself.</p>
+<h2 id="design-goals">Design Goals<a class="anchor" href="#design-goals">#</a></h2>
+<dl>
+<dt>Minimalism over features.</dt>
+<dd>The theme ships only what most documentation sites need: a sidebar menu, search, and a few shortcodes. There is no attempt to cover every use case. CSS is written by hand, not generated by a framework. JavaScript is optional for core navigation.</dd>
+<dt>Theme as an extendable base.</dt>
+<dd>Hugo Book is meant to be extended and adapted. &lsquo;Inject&rsquo; partials, custom SCSS, and Hugo&rsquo;s template override system let you change any part of the theme without modifying the source, while keeping the codebase intentionally small.</dd>
+<dt>Long-term maintainability.</dt>
+<dd>Few dependencies means fewer things to break. The theme avoids heavy JavaScript libraries, CSS frameworks, and complex build pipelines.</dd>
+</dl>
+<p><a href="/docs/getting-started/create-a-site/">Get Started</a></p>
+<h2 id="links">Links<a class="anchor" href="#links">#</a></h2>
+<ul>
+<li><a href="https://github.com/alex-shpak/hugo-book">Source code</a></li>
+<li><a href="https://gohugo.io/documentation/">Hugo documentation</a></li>
+</ul>
+</section>
+  
+    <section id="create-a-site"><h1 id="create-a-site">Create a Site<a class="anchor" href="#create-a-site">#</a></h1>
+<h2 id="prerequisites">Prerequisites<a class="anchor" href="#prerequisites">#</a></h2>
+<ul>
+<li><a href="https://gohugo.io/installation/">Hugo</a> <strong>extended</strong> edition (required for SCSS processing)</li>
+<li><a href="https://git-scm.com/downloads">Git</a> (for theme installation using git submodules)</li>
+<li><a href="https://go.dev/dl/">Go</a> (for theme installation using Hugo Modules)</li>
+</ul>
+<h2 id="quick-start">Quick Start<a class="anchor" href="#quick-start">#</a></h2>
+<p>Use the <a href="https://github.com/alex-shpak/hugo-book-starter">starter repository</a> to get a working site in seconds. It can also be used as a <a href="https://github.com/alex-shpak/hugo-book-starter/generate">GitHub template</a> to create a new repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/alex-shpak/hugo-book-starter documentation
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> documentation
+</span></span><span style="display:flex;"><span>git submodule update --init --remote
+</span></span><span style="display:flex;"><span>hugo server --minify</span></span></code></pre></div><p>By default, the theme renders pages under <code>docs/</code> section as the sidebar menu. See <a href="/docs/content/organisation/">Content Organisation</a> for details.</p>
+<h2 id="installation-methods">Installation Methods<a class="anchor" href="#installation-methods">#</a></h2>
+<div class="book-tabs" >
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-0" checked="checked" /><label for="tabs-&lt;nil&gt;-0">Git Submodule</label><div class="book-tabs-content markdown-inner">
+<p>The simplest approach. The theme is vendored directly into your repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book</span></span></code></pre></div><p>Set the theme in your config</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>theme = <span style="color:#5af78e">&#39;hugo-book&#39;</span></span></span></code></pre></div><p>To update the theme later</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule update --remote --merge</span></span></code></pre></div></div>
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-1"  /><label for="tabs-&lt;nil&gt;-1">Hugo Module</label><div class="book-tabs-content markdown-inner">
+<p>Uses <a href="https://gohugo.io/hugo-modules/">Hugo Modules</a> (requires <a href="https://go.dev/dl/">Go</a>).</p>
+<p>Initialize your site as a module</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo mod init github.com/user/my-docs</span></span></code></pre></div><p>Add the theme import to your config</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[module]
+</span></span><span style="display:flex;"><span>[[module.imports]]
+</span></span><span style="display:flex;"><span>  path = <span style="color:#5af78e">&#39;github.com/alex-shpak/hugo-book&#39;</span></span></span></code></pre></div><p>To update the theme later</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo mod get -u</span></span></code></pre></div></div>
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-2"  /><label for="tabs-&lt;nil&gt;-2">Manual Download</label><div class="book-tabs-content markdown-inner">
+<p>Download the theme from <a href="https://github.com/alex-shpak/hugo-book/releases">GitHub releases</a> and extract it to <code>themes/hugo-book</code>.</p>
+<p>Set the theme in your config</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>theme = <span style="color:#5af78e">&#39;hugo-book&#39;</span></span></span></code></pre></div><p>To update, download and extract the new release again.</p>
+</div>
+
+</div>
+<h2 id="minimal-configuration">Minimal Configuration<a class="anchor" href="#minimal-configuration">#</a></h2>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>baseURL = <span style="color:#5af78e">&#39;https://example.com/&#39;</span>
+</span></span><span style="display:flex;"><span>title = <span style="color:#5af78e">&#39;My Documentation&#39;</span>
+</span></span><span style="display:flex;"><span>theme = <span style="color:#5af78e">&#39;hugo-book&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e"># Required for mermaid and katex shortcodes</span>
+</span></span><span style="display:flex;"><span>[markup.goldmark.renderer]
+</span></span><span style="display:flex;"><span>  unsafe = <span style="color:#ff6ac1">true</span></span></span></code></pre></div><p>See <a href="/docs/getting-started/configuration/">Configuration</a> for the full list of parameters.</p>
+</section>
+  
+    <section id="configuration"><h1 id="configuration">Configuration<a class="anchor" href="#configuration">#</a></h1>
+<p>All theme parameters are set under <code>[params]</code> in your site config. Every parameter is optional.</p>
+<h2 id="theme-parameters">Theme Parameters<a class="anchor" href="#theme-parameters">#</a></h2>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Color theme: &#39;light&#39;, &#39;dark&#39; or &#39;auto&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Auto switches based on OS/browser preference</span>
+</span></span><span style="display:flex;"><span>  BookTheme = <span style="color:#5af78e">&#39;light&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Show table of contents on right side of pages</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Can also be set per-page via frontmatter</span>
+</span></span><span style="display:flex;"><span>  BookToC = <span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Path to favicon file relative to &#39;static&#39; directory</span>
+</span></span><span style="display:flex;"><span>  BookFavicon = <span style="color:#5af78e">&#39;favicon.png&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Path to logo image file relative to &#39;static&#39; directory</span>
+</span></span><span style="display:flex;"><span>  BookLogo = <span style="color:#5af78e">&#39;logo.png&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Root section to render as sidebar menu</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Default: &#39;docs&#39;</span>
+</span></span><span style="display:flex;"><span>  BookSection = <span style="color:#5af78e">&#39;docs&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Repository URL, used for edit and commit links</span>
+</span></span><span style="display:flex;"><span>  BookRepo = <span style="color:#5af78e">&#39;https://github.com/user/repo&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Template for &#34;Last Modified&#34; commit link in page footer</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Requires enableGitInfo = true in site config</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Available context: .Site, .Page, .GitInfo</span>
+</span></span><span style="display:flex;"><span>  BookLastChangeLink = <span style="color:#5af78e">&#39;{{ .Site.Params.BookRepo }}/commit/{{ .GitInfo.Hash }}&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Template for &#34;Edit this page&#34; link in page footer</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Available context: .Site, .Page, .Path</span>
+</span></span><span style="display:flex;"><span>  BookEditLink = <span style="color:#5af78e">&#39;{{ .Site.Params.BookRepo }}/edit/main/{{ .Path }}&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Date format used in git info and blog posts</span>
+</span></span><span style="display:flex;"><span>  BookDateFormat = <span style="color:#5af78e">&#39;January 2, 2006&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Enable full-text search with fuse.js</span>
+</span></span><span style="display:flex;"><span>  BookSearch = <span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Enable comments template on pages</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># By default uses Disqus; override partials/docs/comments.html for others</span>
+</span></span><span style="display:flex;"><span>  BookComments = <span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># /!\ Experimental, may change or be removed.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Enable portable markdown links to resolve relative .md links to Hugo URLs.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Lets you write [text](./other.md) instead of Hugo&#39;s relref shortcode.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e">#   false     - disabled, relative .md links not resolved</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e">#   &#39;warning&#39; - enabled, prints a build warning if linked page doesn&#39;t exist</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e">#   &#39;error&#39;   - enabled, fails the build if linked page doesn&#39;t exist</span>
+</span></span><span style="display:flex;"><span>  BookPortableLinks = <span style="color:#ff6ac1">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># /!\ Experimental, may change or be removed.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Register a service worker for offline access to visited pages.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e">#   false      - disabled (default)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e">#   true       - caches pages as you visit them</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e">#   &#39;precache&#39; - pre-populates cache with all site pages on first load</span>
+</span></span><span style="display:flex;"><span>  BookServiceWorker = <span style="color:#ff6ac1">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#78787e"># Only show languages that have translations for current page</span>
+</span></span><span style="display:flex;"><span>  BookTranslatedOnly = <span style="color:#ff6ac1">false</span></span></span></code></pre></div><h2 id="search">Search<a class="anchor" href="#search">#</a></h2>
+<p>Full-text search is enabled by default using <a href="https://www.fusejs.io/">Fuse.js</a>. The search index is built at page load from a generated JSON file.</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  BookSearch = <span style="color:#ff6ac1">true</span></span></span></code></pre></div><p>To exclude a page from the search index, set <code>bookSearchExclude: true</code> in its frontmatter.</p>
+<p>If search is not working, verify that <code>baseURL</code> in your config matches the URL where the site is hosted. A mismatch prevents the search index from loading.</p>
+<h2 id="hugo-site-configuration">Hugo Site Configuration<a class="anchor" href="#hugo-site-configuration">#</a></h2>
+<p>These Hugo settings are relevant for the theme</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#78787e"># Preserve URL casing (recommended)</span>
+</span></span><span style="display:flex;"><span>disablePathToLower = <span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e"># Enable git metadata for &#34;Last Modified&#34; footer</span>
+</span></span><span style="display:flex;"><span>enableGitInfo = <span style="color:#ff6ac1">true</span></span></span></code></pre></div><h2 id="markup">Markup<a class="anchor" href="#markup">#</a></h2>
+<h3 id="goldmark-renderer">Goldmark Renderer<a class="anchor" href="#goldmark-renderer">#</a></h3>
+<p>The <code>unsafe</code> option is <strong>required</strong> for Mermaid and KaTeX shortcodes to render correctly</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[markup.goldmark.renderer]
+</span></span><span style="display:flex;"><span>  unsafe = <span style="color:#ff6ac1">true</span></span></span></code></pre></div><h3 id="table-of-contents">Table of Contents<a class="anchor" href="#table-of-contents">#</a></h3>
+<p>Control the heading levels included in the table of contents</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[markup.tableOfContents]
+</span></span><span style="display:flex;"><span>  startLevel = <span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span>  endLevel = <span style="color:#ff9f43">4</span></span></span></code></pre></div><p>The <code>startLevel</code> and <code>endLevel</code> values apply globally. Individual pages can toggle the ToC on or off with the <code>bookToC</code> frontmatter parameter.</p>
+<h2 id="output-formats">Output Formats<a class="anchor" href="#output-formats">#</a></h2>
+<p>The theme supports plain text output alongside HTML, useful for accessibility and LLMs</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[outputFormats.txt]
+</span></span><span style="display:flex;"><span>  mediaType = <span style="color:#5af78e">&#39;text/plain&#39;</span>
+</span></span><span style="display:flex;"><span>  baseName = <span style="color:#5af78e">&#39;source&#39;</span>
+</span></span><span style="display:flex;"><span>  isPlainText = <span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[outputs]
+</span></span><span style="display:flex;"><span>  home = [<span style="color:#5af78e">&#39;html&#39;</span>, <span style="color:#5af78e">&#39;txt&#39;</span>, <span style="color:#5af78e">&#39;rss&#39;</span>]
+</span></span><span style="display:flex;"><span>  page = [<span style="color:#5af78e">&#39;html&#39;</span>, <span style="color:#5af78e">&#39;txt&#39;</span>]
+</span></span><span style="display:flex;"><span>  section = [<span style="color:#5af78e">&#39;html&#39;</span>, <span style="color:#5af78e">&#39;txt&#39;</span>]</span></span></code></pre></div></section>
+  
+    <section id="organisation"><h1 id="content-organisation">Content Organisation<a class="anchor" href="#content-organisation">#</a></h1>
+<p>Hugo Book renders pages from a section as a sidebar menu. By default this is the <code>docs/</code> directory.</p>
+<h2 id="example-directory-structure">Example Directory Structure<a class="anchor" href="#example-directory-structure">#</a></h2>
+<pre tabindex="0"><code>content/
+├── docs/
+│   ├── _index.md
+│   ├── getting-started.md
+│   ├── guide/
+│   │   ├── _index.md
+│   │   ├── install.md
+│   │   └── configure.md
+│   └── reference/
+│       └── _index.md
+├── posts/
+│   ├── _index.md
+│   └── my-post.md
+└── _index.md</code></pre><p>Pages are ordered by <code>weight</code> frontmatter, then alphabetically. Section <code>_index.md</code> files define the section entry in the menu.</p>
+<h2 id="changing-the-menu-section">Changing the Menu Section<a class="anchor" href="#changing-the-menu-section">#</a></h2>
+<p>By default, pages under <code>docs/</code> are rendered as the sidebar menu. Change this with the <code>BookSection</code> parameter in <a href="/docs/getting-started/configuration/">Configuration</a>. Set to <code>'/'</code> to render all top-level sections.</p>
+<h2 id="page-layouts">Page Layouts<a class="anchor" href="#page-layouts">#</a></h2>
+<p>The theme provides several layouts:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Layout</th>
+					<th>Usage</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>(default)</td>
+					<td>Documentation pages</td>
+					<td>Sidebar menu + content + optional ToC</td>
+			</tr>
+			<tr>
+					<td><code>landing</code></td>
+					<td><code>layout: landing</code></td>
+					<td>Full-width, no sidebar. Used for homepages.</td>
+			</tr>
+			<tr>
+					<td><code>book</code></td>
+					<td><code>layout: book</code></td>
+					<td>Single-page view with all subsections listed</td>
+			</tr>
+			<tr>
+					<td><code>posts</code></td>
+					<td>Pages under <code>posts/</code></td>
+					<td>Blog-style with date, tags, pagination</td>
+			</tr>
+	</tbody>
+</table>
+<p>Set the layout in frontmatter</p>
+<div class="book-codeblock-filename">
+  <a >_index.md</a>
+</div><div class="highlight" filename="_index.md"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">layout</span>: landing
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><p>See <a href="/docs/content/pages/">Pages</a> for frontmatter reference and <a href="/docs/content/menus/">Menus</a> for navigation controls.</p>
+</section>
+  
+    <section id="pages"><h1 id="page-frontmatter">Page Frontmatter<a class="anchor" href="#page-frontmatter">#</a></h1>
+<p>Every page can use these <a href="https://gohugo.io/content-management/front-matter/">frontmatter</a> parameters to control its behavior in the theme.</p>
+<div class="book-tabs" >
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-0" checked="checked" /><label for="tabs-&lt;nil&gt;-0">YAML</label><div class="book-tabs-content markdown-inner">
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">title</span>: My Page
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">weight</span>: <span style="color:#ff9f43">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">bookToC</span>: <span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">bookCollapseSection</span>: <span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div></div>
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-1"  /><label for="tabs-&lt;nil&gt;-1">TOML</label><div class="book-tabs-content markdown-inner">
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#ff5c57">+++</span>
+</span></span><span style="display:flex;"><span>title = <span style="color:#5af78e">&#39;My Page&#39;</span>
+</span></span><span style="display:flex;"><span>weight = <span style="color:#ff9f43">10</span>
+</span></span><span style="display:flex;"><span>bookToC = <span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span>bookCollapseSection = <span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">+++</span></span></span></code></pre></div></div>
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-2"  /><label for="tabs-&lt;nil&gt;-2">JSON</label><div class="book-tabs-content markdown-inner">
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;title&#34;</span>: <span style="color:#5af78e">&#34;My Page&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;weight&#34;</span>: <span style="color:#ff9f43">10</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;bookToC&#34;</span>: <span style="color:#ff6ac1">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;bookCollapseSection&#34;</span>: <span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></div>
+</div>
+<h2 id="navigation">Navigation<a class="anchor" href="#navigation">#</a></h2>
+<p>These parameters control how the page appears in the sidebar menu. Set in page frontmatter.</p>
+<table>
+	<thead>
+			<tr>
+					<th>Parameter</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>weight</code></td>
+					<td></td>
+					<td>Menu ordering. Lower values appear first. Without weight, pages are sorted alphabetically.</td>
+			</tr>
+			<tr>
+					<td><code>bookHidden</code></td>
+					<td><code>false</code></td>
+					<td>Hide the page from the sidebar menu. The page is still accessible by URL.</td>
+			</tr>
+			<tr>
+					<td><code>bookCollapseSection</code></td>
+					<td><code>false</code></td>
+					<td>Make a section collapsible in the sidebar. Subsections are hidden until clicked.</td>
+			</tr>
+			<tr>
+					<td><code>bookFlatSection</code></td>
+					<td><code>false</code></td>
+					<td>Display subsection pages at the same level instead of nesting them.</td>
+			</tr>
+			<tr>
+					<td><code>bookHref</code></td>
+					<td></td>
+					<td>Override the menu link with an external URL.</td>
+			</tr>
+			<tr>
+					<td><code>bookIcon</code></td>
+					<td></td>
+					<td>Display an icon next to the menu entry.</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="content-display">Content Display<a class="anchor" href="#content-display">#</a></h2>
+<p>These parameters control page content rendering. Set in page frontmatter.</p>
+<table>
+	<thead>
+			<tr>
+					<th>Parameter</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>bookToC</code></td>
+					<td></td>
+					<td>Show or hide the table of contents. Overrides the site-level <code>BookToC</code> setting.</td>
+			</tr>
+			<tr>
+					<td><code>bookComments</code></td>
+					<td></td>
+					<td>Show or hide comments. Overrides the site-level <code>BookComments</code> setting.</td>
+			</tr>
+			<tr>
+					<td><code>bookSearchExclude</code></td>
+					<td><code>false</code></td>
+					<td>Exclude this page from the search index.</td>
+			</tr>
+	</tbody>
+</table>
+<p>See <a href="/docs/content/blog/">Blog</a> for post-specific frontmatter.</p>
+</section>
+  
+    <section id="menus"><h1 id="menu-system">Menu System<a class="anchor" href="#menu-system">#</a></h1>
+<p>Hugo Book supports two types of menus: an automatic file-tree menu built from your content structure, and Hugo&rsquo;s standard menu system for additional navigation.</p>
+<h2 id="file-tree-menu">File-Tree Menu<a class="anchor" href="#file-tree-menu">#</a></h2>
+<p>The sidebar menu is automatically generated from pages in the <code>BookSection</code> directory (default: <code>docs/</code>). The hierarchy mirrors your directory structure.</p>
+<p>Control how sections appear with <a href="/docs/content/pages/">page frontmatter</a>.</p>
+<h2 id="hugo-menus">Hugo Menus<a class="anchor" href="#hugo-menus">#</a></h2>
+<p>The theme renders three Hugo menu locations:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Menu</th>
+					<th>Location</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>menu.before</code></td>
+					<td>Rendered <strong>above</strong> the file-tree menu.</td>
+			</tr>
+			<tr>
+					<td><code>menu.after</code></td>
+					<td>Rendered <strong>below</strong> the file-tree menu.</td>
+			</tr>
+			<tr>
+					<td><code>menu.home</code></td>
+					<td>Rendered on the landing page header (only on pages with <code>layout: landing</code>).</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="configuration">Configuration<a class="anchor" href="#configuration">#</a></h3>
+<p>Define menus in your site config</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[menu.before]]
+</span></span><span style="display:flex;"><span>  name = <span style="color:#5af78e">&#39;Overview&#39;</span>
+</span></span><span style="display:flex;"><span>  url = <span style="color:#5af78e">&#39;/overview/&#39;</span>
+</span></span><span style="display:flex;"><span>  weight = <span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[menu.after]]
+</span></span><span style="display:flex;"><span>  name = <span style="color:#5af78e">&#39;Github&#39;</span>
+</span></span><span style="display:flex;"><span>  url = <span style="color:#5af78e">&#39;https://github.com/user/repo&#39;</span>
+</span></span><span style="display:flex;"><span>  weight = <span style="color:#ff9f43">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[menu.after]]
+</span></span><span style="display:flex;"><span>  name = <span style="color:#5af78e">&#39;Hugo Themes&#39;</span>
+</span></span><span style="display:flex;"><span>  url = <span style="color:#5af78e">&#39;https://themes.gohugo.io/themes/hugo-book/&#39;</span>
+</span></span><span style="display:flex;"><span>  weight = <span style="color:#ff9f43">20</span></span></span></code></pre></div><p>Or add pages to menus via frontmatter</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">title</span>: Blog
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">menu</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">after</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">weight</span>: <span style="color:#ff9f43">5</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h3 id="menu-item-parameters">Menu Item Parameters<a class="anchor" href="#menu-item-parameters">#</a></h3>
+<p>Menu items support these params under <code>[params]</code>:</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[menu.after]]
+</span></span><span style="display:flex;"><span>  name = <span style="color:#5af78e">&#39;Example&#39;</span>
+</span></span><span style="display:flex;"><span>  url = <span style="color:#5af78e">&#39;/example/&#39;</span>
+</span></span><span style="display:flex;"><span>  weight = <span style="color:#ff9f43">10</span>
+</span></span><span style="display:flex;"><span>  [menu.after.params]
+</span></span><span style="display:flex;"><span>    bookIcon = <span style="color:#5af78e">&#39;star&#39;</span>       <span style="color:#78787e"># Icon name to display next to the item</span>
+</span></span><span style="display:flex;"><span>    bookNewTab = <span style="color:#ff6ac1">true</span>        <span style="color:#78787e"># Open the link in a new tab</span>
+</span></span><span style="display:flex;"><span>    class = <span style="color:#5af78e">&#39;custom-class&#39;</span>   <span style="color:#78787e"># CSS class to add to the menu item</span></span></span></code></pre></div></section>
+  
+    <section id="blog"><h1 id="blog">Blog<a class="anchor" href="#blog">#</a></h1>
+<p>Hugo Book includes templates for blog-style posts with dates, tags, and pagination. Blog functionality is very basic.</p>
+<h2 id="setup">Setup<a class="anchor" href="#setup">#</a></h2>
+<p>Create a <code>posts/</code> section in your content directory</p>
+<pre tabindex="0"><code>content/
+└── posts/
+    ├── _index.md
+    └── my-first-post.md</code></pre><p>Add the blog section to a menu so readers can find it</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">title</span>: Blog
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">menu</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">after</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">weight</span>: <span style="color:#ff9f43">5</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h2 id="post-frontmatter">Post Frontmatter<a class="anchor" href="#post-frontmatter">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">title</span>: <span style="color:#5af78e">&#34;My First Post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">date</span>: 2025-01-15
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">tags</span>: [<span style="color:#5af78e">&#34;hugo&#34;</span>, <span style="color:#5af78e">&#34;documentation&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">categories</span>: [<span style="color:#5af78e">&#34;Guides&#34;</span>]
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h2 id="thumbnails">Thumbnails<a class="anchor" href="#thumbnails">#</a></h2>
+<p>Posts can display a thumbnail image. By default the theme looks for a file matching <code>thumbnail.*</code> in the post&rsquo;s page bundle. Override the pattern per-post</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">bookPostThumbnail</span>: <span style="color:#5af78e">&#34;cover.*&#34;</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h2 id="date-format">Date Format<a class="anchor" href="#date-format">#</a></h2>
+<p>The date display format is configured site-wide via <code>BookDateFormat</code>. See <a href="/docs/getting-started/configuration/">Configuration</a> for details.</p>
+</section>
+  
+    <section id="multi-language"><h1 id="multi-language-support">Multi-Language Support<a class="anchor" href="#multi-language-support">#</a></h1>
+<p>Hugo Book supports Hugo&rsquo;s <a href="https://gohugo.io/content-management/multilingual/">multilingual mode</a> with content translation by directory.</p>
+<h2 id="configuration">Configuration<a class="anchor" href="#configuration">#</a></h2>
+<p>Define languages in your site config</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[languages]
+</span></span><span style="display:flex;"><span>[languages.en]
+</span></span><span style="display:flex;"><span>  label = <span style="color:#5af78e">&#39;English&#39;</span>
+</span></span><span style="display:flex;"><span>  contentDir = <span style="color:#5af78e">&#39;content.en&#39;</span>
+</span></span><span style="display:flex;"><span>  weight = <span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[languages.zh]
+</span></span><span style="display:flex;"><span>  label = <span style="color:#5af78e">&#39;Chinese&#39;</span>
+</span></span><span style="display:flex;"><span>  contentDir = <span style="color:#5af78e">&#39;content.zh&#39;</span>
+</span></span><span style="display:flex;"><span>  weight = <span style="color:#ff9f43">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[languages.he]
+</span></span><span style="display:flex;"><span>  label = <span style="color:#5af78e">&#39;Hebrew&#39;</span>
+</span></span><span style="display:flex;"><span>  contentDir = <span style="color:#5af78e">&#39;content.he&#39;</span>
+</span></span><span style="display:flex;"><span>  direction = <span style="color:#5af78e">&#39;rtl&#39;</span>
+</span></span><span style="display:flex;"><span>  weight = <span style="color:#ff9f43">3</span></span></span></code></pre></div><p>A language selector dropdown appears automatically when multiple languages are configured.</p>
+<h2 id="rtl-support">RTL Support<a class="anchor" href="#rtl-support">#</a></h2>
+<p>Set <code>direction = 'rtl'</code> on a language to enable right-to-left layout. The entire page layout, including the sidebar menu, mirrors automatically.</p>
+<h2 id="translation-dropdown">Translation Dropdown<a class="anchor" href="#translation-dropdown">#</a></h2>
+<p>By default, all configured languages appear in the selector. To only show languages that have a translation for the current page</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  BookTranslatedOnly = <span style="color:#ff6ac1">true</span></span></span></code></pre></div></section>
+  
+    <section id="shortcodes"><h1 id="shortcodes">Shortcodes<a class="anchor" href="#shortcodes">#</a></h1>
+<p>Hugo Book includes shortcodes for common documentation patterns. All interactive shortcodes work without JavaScript using CSS-only techniques.</p>
+<p>Hugo shortcodes use two delimiter styles:</p>
+<dl>
+<dt><code>{{&lt; shortcode &gt;}}</code></dt>
+<dd>Renders inner content as plain HTML. Use for shortcodes that don&rsquo;t contain markdown.</dd>
+<dt><code>{{% shortcode %}}</code></dt>
+<dd>Processes inner content as markdown. Use when the shortcode body contains markdown formatting.</dd>
+</dl>
+<blockquote class='book-hint note'>
+<p>Use <code>{{% shortcode %}}</code> when the body contains markdown that needs to be rendered. <code>{{&lt; shortcode &gt;}}</code> passes content as-is without markdown processing.
+When nesting shortcodes (e.g. tabs inside columns), the outer shortcode must use <code>{{% shortcode %}}</code> for the inner shortcodes and markdown to be processed.</p></blockquote></section>
+  
+    <section id="asciinema"><h1 id="asciinema">Asciinema<a class="anchor" href="#asciinema">#</a></h1>
+<p>Embed terminal recordings with the <a href="https://asciinema.org/">Asciinema</a> player.</p>
+<h2 id="syntax">Syntax<a class="anchor" href="#syntax">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#57c7ff">asciinema</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">cast</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;recording.cast&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">loop</span><span style="color:#ff6ac1">=</span><span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">autoplay</span><span style="color:#ff6ac1">=</span><span style="color:#ff6ac1">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">speed</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">2</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span></span></span></code></pre></div><p>The <code>cast</code> parameter accepts page resources, site resources, or remote URLs.</p>
+<h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<link rel="stylesheet" href="/asciinema/asciinema-player.css" /><script defer src="/asciinema/asciinema-player.min.js"></script><script defer src="/asciinema/asciinema-auto.js"></script><div class="asciinema book-asciinema" id="asciinema-1" x-data-cast="/asciinema-627097.cast" x-data-opts="{&#34;autoplay&#34;:true,&#34;loop&#34;:true,&#34;speed&#34;:2}" ></div>
+
+<h2 id="parameters">Parameters<a class="anchor" href="#parameters">#</a></h2>
+<dl>
+<dt><code>cast</code></dt>
+<dd>Path to the <code>.cast</code> file. Can be a local resource or a remote URL.</dd>
+</dl>
+<p>All other parameters are passed directly to the Asciinema player. See the <a href="https://docs.asciinema.org/manual/player/options/">Asciinema player options</a> for the full list.</p>
+<p>Common options: <code>autoplay</code>, <code>loop</code>, <code>speed</code>, <code>theme</code>, <code>cols</code>, <code>rows</code>, <code>idleTimeLimit</code>, <code>preload</code>.</p>
+</section>
+  
+    <section id="buttons"><h1 id="buttons">Buttons<a class="anchor" href="#buttons">#</a></h1>
+<p>Styled links that can point to local pages or external URLs. External links automatically open in a new tab.</p>
+<h2 id="syntax">Syntax<a class="anchor" href="#syntax">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#57c7ff">button</span> <span style="color:#57c7ff">relref</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;/&#34;</span> <span style="color:#ff6ac1">[</span><span style="color:#57c7ff">class</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;...&#34;</span><span style="color:#ff6ac1">]</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span>Get Home<span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">button</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#57c7ff">button</span> <span style="color:#57c7ff">href</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;https://github.com/alex-shpak/hugo-book&#34;</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span>Github<span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">button</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span></span></span></code></pre></div><h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<p><a class="book-btn" href="/" >Home</a>
+<a class="book-btn" href="https://github.com/alex-shpak/hugo-book" rel="noopener" target="_blank" >Github</a></p>
+<h2 id="parameters">Parameters<a class="anchor" href="#parameters">#</a></h2>
+<dl>
+<dt><code>href</code></dt>
+<dd>URL for external links.</dd>
+<dt><code>relref</code></dt>
+<dd>Hugo page reference for internal links.</dd>
+<dt><code>class</code></dt>
+<dd>Additional CSS classes.</dd>
+</dl>
+</section>
+  
+    <section id="columns"><h1 id="columns">Columns<a class="anchor" href="#columns">#</a></h1>
+<p>Organize content horizontally. Renders a markdown list as up to 3 side-by-side columns.</p>
+<h2 id="syntax">Syntax<a class="anchor" href="#syntax">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#57c7ff">columns</span> <span style="color:#ff6ac1">[</span><span style="color:#57c7ff">ratio</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;1:1&#34;</span><span style="color:#ff6ac1">]</span> <span style="color:#ff6ac1">[</span><span style="color:#57c7ff">class</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;...&#34;</span><span style="color:#ff6ac1">]</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span>- ### Left
+</span></span><span style="display:flex;"><span>  Content...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>- ### Right
+</span></span><span style="display:flex;"><span>  Content...
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">columns</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span></span></span></code></pre></div><h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<div class="book-columns" id="book-columns-1" >
+<ul>
+<li>
+<h3 id="file-tree-menu">File-Tree Menu<a class="anchor" href="#file-tree-menu">#</a></h3>
+<p>The sidebar menu is automatically generated from your content directory structure. Pages are ordered by <code>weight</code> frontmatter.</p>
+</li>
+<li>
+<h3 id="hugo-menus">Hugo Menus<a class="anchor" href="#hugo-menus">#</a></h3>
+<p>Additional menu entries can be added above or below the file-tree using Hugo&rsquo;s standard menu system in your site config.</p>
+</li>
+<li>
+<h3 id="landing-menu">Landing Menu<a class="anchor" href="#landing-menu">#</a></h3>
+<p>Pages with <code>layout: landing</code> use a separate menu defined under <code>menu.home</code> for header navigation.</p>
+</li>
+</ul>
+</div>
+<h2 id="custom-ratio">Custom Ratio<a class="anchor" href="#custom-ratio">#</a></h2>
+<p>Set relative column widths with the <code>ratio</code> parameter</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#57c7ff">columns</span> <span style="color:#57c7ff">ratio</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;1:2&#34;</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span>- ### Sidebar
+</span></span><span style="display:flex;"><span>- ### Content Area
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">columns</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span></span></span></code></pre></div><style>#book-columns-2>ul>li:nth-child(1) {
+  flex-grow: 1;
+}
+#book-columns-2>ul>li:nth-child(2) {
+  flex-grow: 2;
+}
+</style><div class="book-columns" id="book-columns-2" >
+<ul>
+<li>
+<h3 id="file-tree-menu-1">File-Tree Menu<a class="anchor" href="#file-tree-menu-1">#</a></h3>
+<p>The sidebar menu is automatically generated from your content directory structure. Pages are ordered by <code>weight</code> frontmatter.</p>
+</li>
+<li>
+<h3 id="hugo-menus-1">Hugo Menus<a class="anchor" href="#hugo-menus-1">#</a></h3>
+<p>Additional menu entries can be added above or below the file-tree using Hugo&rsquo;s standard menu system in your site config.</p>
+</li>
+</ul>
+</div>
+</section>
+  
+    <section id="details"><h1 id="details">Details<a class="anchor" href="#details">#</a></h1>
+<p>Collapsible content using the HTML5 <code>&lt;details&gt;</code> element.</p>
+<h2 id="syntax">Syntax<a class="anchor" href="#syntax">#</a></h2>
+<p>Positional arguments:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#57c7ff">details</span> <span style="color:#5af78e">&#34;Title&#34;</span> <span style="color:#ff6ac1">[</span><span style="color:#57c7ff">open</span><span style="color:#ff6ac1">]</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span>Markdown content
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">details</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span></span></span></code></pre></div><p>Named parameters:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#57c7ff">details</span> <span style="color:#57c7ff">title</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;Title&#34;</span> <span style="color:#57c7ff">open</span><span style="color:#ff6ac1">=</span><span style="color:#ff6ac1">true</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span>Markdown content
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">details</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span></span></span></code></pre></div><h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<details ><summary>What Hugo version is required?</summary><div class="markdown-inner">
+<p>Hugo Book requires Hugo {x} or later, extended edition. The extended edition is needed for SCSS processing.</p>
+</div></details>
+<details open="true" ><summary>How do I override the theme?</summary><div class="markdown-inner">
+<p>Create matching files in your project&rsquo;s <code>layouts/</code> or <code>assets/</code> directory. Hugo&rsquo;s lookup order will use your files over the theme&rsquo;s.</p>
+</div></details>
+<h2 id="parameters">Parameters<a class="anchor" href="#parameters">#</a></h2>
+<dl>
+<dt><code>title</code> (or first positional argument)</dt>
+<dd>The summary text shown when collapsed.</dd>
+<dt><code>open</code> (or second positional argument)</dt>
+<dd>Start expanded. Default: collapsed.</dd>
+</dl>
+</section>
+  
+    <section id="images"><h1 id="images">Images<a class="anchor" href="#images">#</a></h1>
+<p>Enhanced image display with click-to-expand behavior.</p>
+<h2 id="syntax">Syntax<a class="anchor" href="#syntax">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#57c7ff">image</span> <span style="color:#57c7ff">src</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;photo.jpg&#34;</span> <span style="color:#57c7ff">alt</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;Description&#34;</span> <span style="color:#57c7ff">title</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;Caption&#34;</span> <span style="color:#57c7ff">loading</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;lazy&#34;</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span></span></span></code></pre></div><h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<label class="book-image" for="book-image-toggle-1"><input class="hidden toggle" type="checkbox" id="book-image-toggle-1" /><img src="/placeholder.svg" alt="Placeholder image" loading="lazy" title="Click to expand"  /></label>
+<h2 id="parameters">Parameters<a class="anchor" href="#parameters">#</a></h2>
+<dl>
+<dt><code>src</code></dt>
+<dd>Path to the image. Supports page resources, site resources, and URLs.</dd>
+<dt><code>alt</code></dt>
+<dd>Alternate text for accessibility.</dd>
+<dt><code>title</code></dt>
+<dd>Caption displayed below the image.</dd>
+<dt><code>loading</code></dt>
+<dd>Loading strategy: <code>lazy</code>, <code>eager</code>, or <code>auto</code>.</dd>
+<dt><code>class</code></dt>
+<dd>Additional CSS classes on the <code>&lt;img&gt;</code> element.</dd>
+</dl>
+</section>
+  
+    <section id="openapi"><h1 id="openapi">OpenAPI<a class="anchor" href="#openapi">#</a></h1>
+<p>Renders an OpenAPI 3.x specification as a documentation page. Operations are grouped by their first tag.</p>
+<h2 id="syntax">Syntax<a class="anchor" href="#syntax">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#57c7ff">openapi</span> <span style="color:#57c7ff">src</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;spec.json&#34;</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span></span></span></code></pre></div><p>The spec file is loaded via <code>resources.Get</code>, so the path is relative to the site&rsquo;s <code>assets/</code> directory. JSON and YAML are both supported.</p>
+<h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<p>This API allows writing down marks on a Tic Tac Toe board
+and requesting the state of the board or of individual squares.</p>
+<p><code>v1.0.0</code></p>
+<h2 id="security">Security<a class="anchor" href="#security">#</a></h2>
+<dl>
+<dt><code>app2AppOauth</code></dt>
+<dd><code>oauth2</code></dd>
+<dt>Basic HTTP Authentication</dt>
+<dd><code>basicHttpAuthentication</code></dd>
+<dd><code>http</code> <code>Basic</code></dd>
+<dt>Bearer token using a JWT</dt>
+<dd><code>bearerHttpAuthentication</code></dd>
+<dd><code>http</code> <code>Bearer</code> <code>JWT</code></dd>
+<dt>API key provided in console</dt>
+<dd><code>defaultApiKey</code></dd>
+<dd><code>apiKey</code> in <code>header</code> (<code>api-key</code>)</dd>
+<dt><code>user2AppOauth</code></dt>
+<dd><code>oauth2</code></dd>
+</dl>
+<h2 id="gameplay">Gameplay<a class="anchor" href="#gameplay">#</a></h2>
+<h3 id="op-get-board">Get the whole board<a class="anchor" href="#op-get-board">#</a></h3>
+<p>Retrieves the current state of the board and the winner.</p>
+<h4 id="request-requires-defaultapikey-app2appoauth">Request (requires <a href="#security">defaultApiKey</a>, <a href="#security">app2AppOauth</a>)<a class="anchor" href="#request-requires-defaultapikey-app2appoauth">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span>GET /board</span></span></code></pre></div><h4 id="responses">Responses<a class="anchor" href="#responses">#</a></h4>
+<p><code>200</code>: OK</p>
+<p>Schema: <a href="#model-status">status</a></p>
+<table>
+	<thead>
+			<tr>
+					<th>Property</th>
+					<th>Type</th>
+					<th>Required</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>board</code></td>
+					<td><a href="#model-board">board</a></td>
+					<td>no</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td><code>winner</code></td>
+					<td><a href="#model-winner">winner</a></td>
+					<td>no</td>
+					<td>Winner of the game. <code>.</code> means nobody has won yet.</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="op-get-square">Get a single board square<a class="anchor" href="#op-get-square">#</a></h3>
+<p>Retrieves the requested square.</p>
+<h4 id="request-requires-bearerhttpauthentication-user2appoauth">Request (requires <a href="#security">bearerHttpAuthentication</a>, <a href="#security">user2AppOauth</a>)<a class="anchor" href="#request-requires-bearerhttpauthentication-user2appoauth">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span>GET /board/<span style="color:#78787e">{</span><span style="color:#57c7ff">row</span><span style="color:#78787e">}</span>/<span style="color:#78787e">{</span><span style="color:#57c7ff">column</span><span style="color:#78787e">}</span></span></span></code></pre></div><h4 id="path-parameters">Path parameters<a class="anchor" href="#path-parameters">#</a></h4>
+<table>
+	<thead>
+			<tr>
+					<th>Parameter name</th>
+					<th>Value</th>
+					<th>Description</th>
+					<th>Additional</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>row</code></td>
+					<td><a href="#model-coordinate">coordinate</a></td>
+					<td>Board row (vertical coordinate)</td>
+					<td>Required, Example: <code>1</code></td>
+			</tr>
+			<tr>
+					<td><code>column</code></td>
+					<td><a href="#model-coordinate">coordinate</a></td>
+					<td>Board column (horizontal coordinate)</td>
+					<td>Required, Example: <code>1</code></td>
+			</tr>
+	</tbody>
+</table>
+<h4 id="responses-1">Responses<a class="anchor" href="#responses-1">#</a></h4>
+<p><code>200</code>: OK</p>
+<p>Schema: <a href="#model-mark">mark</a></p>
+<p><code>400</code>: The provided parameters are incorrect</p>
+<div class="book-codeblock-filename">
+  <a >text/html</a>
+</div><div class="highlight" filename="text/html"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-jsonc" data-lang="jsonc"><span style="display:flex;"><span><span style="color:#5af78e">&#34;Illegal coordinates&#34;</span></span></span></code></pre></div><p>Schema: <a href="#model-errormessage">errorMessage</a></p>
+<h3 id="op-put-square">Set a single board square<a class="anchor" href="#op-put-square">#</a></h3>
+<p>Places a mark on the board and retrieves the whole board and the winner (if any).</p>
+<h4 id="request-requires-bearerhttpauthentication-user2appoauth-1">Request (requires <a href="#security">bearerHttpAuthentication</a>, <a href="#security">user2AppOauth</a>)<a class="anchor" href="#request-requires-bearerhttpauthentication-user2appoauth-1">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span>PUT /board/<span style="color:#78787e">{</span><span style="color:#57c7ff">row</span><span style="color:#78787e">}</span>/<span style="color:#78787e">{</span><span style="color:#57c7ff">column</span><span style="color:#78787e">}</span></span></span></code></pre></div><h4 id="path-parameters-1">Path parameters<a class="anchor" href="#path-parameters-1">#</a></h4>
+<table>
+	<thead>
+			<tr>
+					<th>Parameter name</th>
+					<th>Value</th>
+					<th>Description</th>
+					<th>Additional</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>row</code></td>
+					<td><a href="#model-coordinate">coordinate</a></td>
+					<td>Board row (vertical coordinate)</td>
+					<td>Required, Example: <code>1</code></td>
+			</tr>
+			<tr>
+					<td><code>column</code></td>
+					<td><a href="#model-coordinate">coordinate</a></td>
+					<td>Board column (horizontal coordinate)</td>
+					<td>Required, Example: <code>1</code></td>
+			</tr>
+	</tbody>
+</table>
+<h4 id="request-body-required">Request body (required)<a class="anchor" href="#request-body-required">#</a></h4>
+<p>Schema: <a href="#model-mark">mark</a></p>
+<h4 id="responses-2">Responses<a class="anchor" href="#responses-2">#</a></h4>
+<p><code>200</code>: OK</p>
+<p>Schema: <a href="#model-status">status</a></p>
+<table>
+	<thead>
+			<tr>
+					<th>Property</th>
+					<th>Type</th>
+					<th>Required</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>board</code></td>
+					<td><a href="#model-board">board</a></td>
+					<td>no</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td><code>winner</code></td>
+					<td><a href="#model-winner">winner</a></td>
+					<td>no</td>
+					<td>Winner of the game. <code>.</code> means nobody has won yet.</td>
+			</tr>
+	</tbody>
+</table>
+<p><code>400</code>: The provided parameters are incorrect</p>
+<p>illegalCoordinates</p>
+<div class="book-codeblock-filename">
+  <a >text/html</a>
+</div><div class="highlight" filename="text/html"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-jsonc" data-lang="jsonc"><span style="display:flex;"><span><span style="color:#5af78e">&#34;Illegal coordinates.&#34;</span></span></span></code></pre></div><p>invalidMark</p>
+<div class="book-codeblock-filename">
+  <a >text/html</a>
+</div><div class="highlight" filename="text/html"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-jsonc" data-lang="jsonc"><span style="display:flex;"><span><span style="color:#5af78e">&#34;Invalid Mark (X or O).&#34;</span></span></span></code></pre></div><p>notEmpty</p>
+<div class="book-codeblock-filename">
+  <a >text/html</a>
+</div><div class="highlight" filename="text/html"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-jsonc" data-lang="jsonc"><span style="display:flex;"><span><span style="color:#5af78e">&#34;Square is not empty.&#34;</span></span></span></code></pre></div><p>Schema: <a href="#model-errormessage">errorMessage</a></p>
+<h2 id="models">Models<a class="anchor" href="#models">#</a></h2>
+<h3 id="model-board">board<a class="anchor" href="#model-board">#</a></h3>
+<p>Type: array of array of <a href="#model-mark">mark</a></p>
+<h3 id="model-coordinate">coordinate<a class="anchor" href="#model-coordinate">#</a></h3>
+<p>Type: integer</p>
+<h3 id="model-errormessage">errorMessage<a class="anchor" href="#model-errormessage">#</a></h3>
+<p>A text message describing an error</p>
+<p>Type: string</p>
+<h3 id="model-mark">mark<a class="anchor" href="#model-mark">#</a></h3>
+<p>Possible values for a board square. <code>.</code> means empty square.</p>
+<p>Type: string (enum: <code>.</code>, <code>X</code>, <code>O</code>)</p>
+<h3 id="model-status">status<a class="anchor" href="#model-status">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th>Property</th>
+					<th>Type</th>
+					<th>Required</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>board</code></td>
+					<td><a href="#model-board">board</a></td>
+					<td>no</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td><code>winner</code></td>
+					<td><a href="#model-winner">winner</a></td>
+					<td>no</td>
+					<td>Winner of the game. <code>.</code> means nobody has won yet.</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="model-winner">winner<a class="anchor" href="#model-winner">#</a></h3>
+<p>Winner of the game. <code>.</code> means nobody has won yet.</p>
+<p>Type: string (enum: <code>.</code>, <code>X</code>, <code>O</code>)</p>
+</section>
+  
+    <section id="hints"><h1 id="hints">Hints<a class="anchor" href="#hints">#</a></h1>
+<p>Callout blocks for notes, warnings, and other contextual messages. Also supports standard GitHub markdown alerts.</p>
+<h2 id="syntax">Syntax<a class="anchor" href="#syntax">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#57c7ff">hint</span> <span style="color:#ff6ac1">[</span><span style="color:#57c7ff">info</span><span style="color:#ff6ac1">|</span><span style="color:#57c7ff">success</span><span style="color:#ff6ac1">|</span><span style="color:#57c7ff">warning</span><span style="color:#ff6ac1">|</span><span style="color:#57c7ff">danger</span><span style="color:#ff6ac1">]</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span>Markdown content
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">hint</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span></span></span></code></pre></div><p>Or using markdown alerts</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#ff6ac1">&gt; </span><span style="text-decoration:underline">[!NOTE|TIP|IMPORTANT|WARNING|CAUTION]
+</span></span></span><span style="display:flex;"><span>&gt; Markdown content</span></span></code></pre></div><h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<blockquote class="book-hint default" >
+<p><strong>Default hint</strong><br>
+Without a specified type.</p>
+</blockquote>
+<blockquote class="book-hint info" >
+<p><strong>Info</strong><br>
+Use for supplementary information that helps the reader.</p>
+</blockquote>
+<blockquote class="book-hint success" >
+<p><strong>Success</strong><br>
+Use to highlight a recommended approach or positive outcome.</p>
+</blockquote>
+<blockquote class="book-hint warning" >
+<p><strong>Warning</strong><br>
+Use for important caveats or potential issues.</p>
+</blockquote>
+<blockquote class="book-hint danger" >
+<p><strong>Danger</strong><br>
+Use for critical warnings about breaking changes or data loss.</p>
+</blockquote>
+<h2 id="markdown-alerts">Markdown Alerts<a class="anchor" href="#markdown-alerts">#</a></h2>
+<p>Standard GitHub markdown alert syntax is also supported:</p>
+<blockquote class='book-hint note'>
+<p>The theme requires Hugo <strong>extended</strong> edition for SCSS processing.</p></blockquote><blockquote class='book-hint tip'>
+<p>Set <code>disablePathToLower = true</code> in your config to preserve URL casing.</p></blockquote><blockquote class='book-hint important'>
+<p>The <code>unsafe = true</code> goldmark setting is required for Mermaid and KaTeX shortcodes.</p></blockquote><blockquote class='book-hint warning'>
+<p>Service worker support is experimental and may change in future releases.</p></blockquote><blockquote class='book-hint caution'>
+<p>Enabling <code>BookPortableLinks = 'error'</code> will fail the build if any markdown link targets are missing.</p></blockquote></section>
+  
+    <section id="mermaid"><h1 id="mermaid">Mermaid<a class="anchor" href="#mermaid">#</a></h1>
+<p>Render diagrams and charts with <a href="https://mermaid.js.org/">Mermaid</a>. The library is loaded automatically on first use.</p>
+<blockquote class='book-hint tip'>
+<p>Override Mermaid initialization by creating <code>assets/mermaid.json</code> in your project.</p></blockquote><h2 id="syntax">Syntax<a class="anchor" href="#syntax">#</a></h2>
+<p>Use fenced code blocks (recommended) or the shortcode</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span>```mermaid
+</span></span><span style="display:flex;"><span>graph LR
+</span></span><span style="display:flex;"><span>    A --&gt; B
+</span></span><span style="display:flex;"><span>```</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#57c7ff">mermaid</span> <span style="color:#ff6ac1">[</span><span style="color:#57c7ff">class</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;...&#34;</span><span style="color:#ff6ac1">]</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span>graph LR
+</span></span><span style="display:flex;"><span>    A --&gt; B
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">mermaid</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span></span></span></code></pre></div><h2 id="examples">Examples<a class="anchor" href="#examples">#</a></h2>
+<div class="book-columns" id="book-columns-1" >
+<ul>
+<li>
+<pre class="mermaid">flowchart TD
+    A[Content Files] --&gt; B[Hugo Build]
+    B --&gt; C[HTML Output]
+    B --&gt; D[Search Index]
+    B --&gt; E[RSS Feed]</pre><script src="/mermaid.min.js"></script><script>mermaid.initialize({"flowchart":{"useMaxWidth":true},"theme":"default"})</script><pre class="mermaid">sequenceDiagram
+    Browser-&gt;&gt;Hugo: Request page
+    Hugo-&gt;&gt;Theme: Apply template
+    Theme-&gt;&gt;Browser: Rendered HTML
+    Browser-&gt;&gt;Browser: Load shortcodes</pre></li>
+<li>
+<pre class="mermaid">pie title Theme Assets
+    &#34;SCSS&#34; : 8
+    &#34;HTML Templates&#34; : 30
+    &#34;JavaScript&#34; : 3
+    &#34;i18n Files&#34; : 35</pre><pre class="mermaid">gitGraph
+   commit id: &#34;init&#34;
+   commit id: &#34;add theme&#34;
+   branch feature
+   checkout feature
+   commit id: &#34;add docs&#34;
+   commit id: &#34;add config&#34;
+   checkout main
+   merge feature
+   commit id: &#34;deploy&#34;</pre></li>
+</ul>
+</div>
+<p>Explore more diagram types on the <a href="https://mermaid.js.org/syntax/flowchart.html">Mermaid documentation</a>.</p>
+</section>
+  
+    <section id="steps"><h1 id="steps">Steps<a class="anchor" href="#steps">#</a></h1>
+<p>Render an ordered list as a series of numbered steps with visual connectors.</p>
+<h2 id="syntax">Syntax<a class="anchor" href="#syntax">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#57c7ff">steps</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span>1. ## Step Title
+</span></span><span style="display:flex;"><span>   Step description...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2. ## Step Title
+</span></span><span style="display:flex;"><span>   Step description...
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">steps</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span></span></span></code></pre></div><h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<div class="book-steps" >
+<ol>
+<li>
+<h2 id="create-your-site">Create your site<a class="anchor" href="#create-your-site">#</a></h2>
+<p>Run <code>hugo new site my-docs</code> to scaffold a new Hugo project.</p>
+</li>
+<li>
+<h2 id="add-the-theme">Add the theme<a class="anchor" href="#add-the-theme">#</a></h2>
+<p>Clone or add hugo-book as a submodule in your <code>themes/</code> directory.</p>
+</li>
+<li>
+<h2 id="write-content">Write content<a class="anchor" href="#write-content">#</a></h2>
+<p>Add markdown files under <code>content/docs/</code>. Each file becomes a page in the sidebar menu.</p>
+</li>
+<li>
+<h2 id="deploy">Deploy<a class="anchor" href="#deploy">#</a></h2>
+<p>Run <code>hugo</code> to build the site. The output is in the <code>public/</code> directory, ready for any static hosting.</p>
+</li>
+</ol>
+</div>
+</section>
+  
+    <section id="tabs"><h1 id="tabs">Tabs<a class="anchor" href="#tabs">#</a></h1>
+<p>Organize content by context, for example installation instructions for each supported platform.</p>
+<h2 id="syntax">Syntax<a class="anchor" href="#syntax">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#57c7ff">tabs</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#57c7ff">tab</span> <span style="color:#5af78e">&#34;First&#34;</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span> Markdown content <span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">tab</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#57c7ff">tab</span> <span style="color:#5af78e">&#34;Second&#34;</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span> Markdown content <span style="color:#78787e">{{</span><span style="color:#ff6ac1">%</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">tab</span> <span style="color:#ff6ac1">%</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">tabs</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span></span></span></code></pre></div><h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<div class="book-tabs" >
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-0" checked="checked" /><label for="tabs-&lt;nil&gt;-0">macOS</label><div class="book-tabs-content markdown-inner">
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install hugo</span></span></code></pre></div></div>
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-1"  /><label for="tabs-&lt;nil&gt;-1">Linux</label><div class="book-tabs-content markdown-inner">
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo snap install hugo</span></span></code></pre></div></div>
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-2"  /><label for="tabs-&lt;nil&gt;-2">Windows</label><div class="book-tabs-content markdown-inner">
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>choco install hugo-extended</span></span></code></pre></div></div>
+
+</div>
+</section>
+  
+    <section id="katex"><h1 id="katex">KaTeX<a class="anchor" href="#katex">#</a></h1>
+<p>Render math typesetting with <a href="https://katex.org/">KaTeX</a>. The library is loaded automatically on first use.</p>
+<link rel="stylesheet" href="/katex/katex.min.css" /><script defer src="/katex/katex.min.js"></script><script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body, {&#34;delimiters&#34;:[{&#34;left&#34;:&#34;$$&#34;,&#34;right&#34;:&#34;$$&#34;,&#34;display&#34;:true},{&#34;left&#34;:&#34;\\(&#34;,&#34;right&#34;:&#34;\\)&#34;,&#34;display&#34;:false},{&#34;left&#34;:&#34;\\[&#34;,&#34;right&#34;:&#34;\\]&#34;,&#34;display&#34;:true}]});"></script>
+<h2 id="activation">Activation<a class="anchor" href="#activation">#</a></h2>
+<p>KaTeX is activated on the page by the first use of the shortcode or a <code>katex</code> code block. You can force activation with <code>{{&lt; katex /&gt;}}</code>, then use delimiters anywhere on the page.</p>
+<h2 id="block-rendering">Block Rendering<a class="anchor" href="#block-rendering">#</a></h2>
+<p>Three equivalent ways to render display math:</p>
+<div class="book-columns" id="book-columns-1" >
+<ul>
+<li>
+<p><strong>Shortcode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#57c7ff">katex</span> <span style="color:#57c7ff">display</span><span style="color:#ff6ac1">=</span><span style="color:#ff6ac1">true</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span>f(x) = \int_<span style="color:#78787e">{</span><span style="color:#ff6ac1">-</span><span style="color:#ff5c57">\</span><span style="color:#57c7ff">infty</span><span style="color:#78787e">}</span>^\infty
+</span></span><span style="display:flex;"><span>\hat f(\xi)\,e^<span style="color:#78787e">{</span><span style="color:#ff9f43">2</span> <span style="color:#ff5c57">\</span><span style="color:#57c7ff">pi</span> <span style="color:#57c7ff">i</span> <span style="color:#ff5c57">\</span><span style="color:#57c7ff">xi</span> <span style="color:#57c7ff">x</span><span style="color:#78787e">}</span>\,d\xi
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">katex</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span></span></span></code></pre></div></li>
+<li>
+<p><strong>Code block</strong></p>
+<pre tabindex="0"><code>```katex
+f(x) = \int_{-\infty}^\infty
+\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+```</code></pre></li>
+<li>
+<p><strong>Dollar delimiters</strong></p>
+<pre tabindex="0"><code>$$
+f(x) = \int_{-\infty}^\infty
+\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+$$</code></pre></li>
+</ul>
+</div>
+<p>Result:</p>
+<p>$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi),e^{2 \pi i \xi x},d\xi
+$$</p>
+<h2 id="inline-rendering">Inline Rendering<a class="anchor" href="#inline-rendering">#</a></h2>
+<table>
+	<thead>
+			<tr>
+					<th>Syntax</th>
+					<th>Output</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>{{&lt; katex &gt;}}\pi(x){{&lt; /katex &gt;}}</code></td>
+					<td><span class="book-katex" >\( \pi(x) \)</span></td>
+			</tr>
+			<tr>
+					<td><code>\\( \pi(x) \\)</code></td>
+					<td>\( \pi(x) \)</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="configuration">Configuration<a class="anchor" href="#configuration">#</a></h2>
+<p>Override KaTeX options by creating <code>assets/katex.json</code>. For example, to enable <code>$...$</code> inline delimiters</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;delimiters&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {<span style="color:#ff6ac1">&#34;left&#34;</span>: <span style="color:#5af78e">&#34;$$&#34;</span>, <span style="color:#ff6ac1">&#34;right&#34;</span>: <span style="color:#5af78e">&#34;$$&#34;</span>, <span style="color:#ff6ac1">&#34;display&#34;</span>: <span style="color:#ff6ac1">true</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#ff6ac1">&#34;left&#34;</span>: <span style="color:#5af78e">&#34;$&#34;</span>, <span style="color:#ff6ac1">&#34;right&#34;</span>: <span style="color:#5af78e">&#34;$&#34;</span>, <span style="color:#ff6ac1">&#34;display&#34;</span>: <span style="color:#ff6ac1">false</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#ff6ac1">&#34;left&#34;</span>: <span style="color:#5af78e">&#34;\\(&#34;</span>, <span style="color:#ff6ac1">&#34;right&#34;</span>: <span style="color:#5af78e">&#34;\\)&#34;</span>, <span style="color:#ff6ac1">&#34;display&#34;</span>: <span style="color:#ff6ac1">false</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#ff6ac1">&#34;left&#34;</span>: <span style="color:#5af78e">&#34;\\[&#34;</span>, <span style="color:#ff6ac1">&#34;right&#34;</span>: <span style="color:#5af78e">&#34;\\]&#34;</span>, <span style="color:#ff6ac1">&#34;display&#34;</span>: <span style="color:#ff6ac1">true</span>}
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>See <a href="https://katex.org/docs/options.html">KaTeX options</a> for all available settings.</p>
+</section>
+  
+    <section id="styles"><h1 id="styles">Styles<a class="anchor" href="#styles">#</a></h1>
+<h2 id="built-in-themes">Built-in Themes<a class="anchor" href="#built-in-themes">#</a></h2>
+<p>Set <code>BookTheme</code> in your site config</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  BookTheme = <span style="color:#5af78e">&#39;light&#39;</span>  <span style="color:#78787e"># or &#39;dark&#39;, &#39;auto&#39;</span></span></span></code></pre></div><table>
+	<thead>
+			<tr>
+					<th>Theme</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>light</code></td>
+					<td>Default. Light background with dark text.</td>
+			</tr>
+			<tr>
+					<td><code>dark</code></td>
+					<td>Dark background (Nord palette) with light text.</td>
+			</tr>
+			<tr>
+					<td><code>auto</code></td>
+					<td>Switches between light and dark based on OS/browser preference (<code>prefers-color-scheme</code>).</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="plugin-themes">Plugin Themes<a class="anchor" href="#plugin-themes">#</a></h2>
+<p>Additional themes are available as SCSS plugins. Import in your <code>assets/_custom.scss</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#ff6ac1">@import</span> <span style="color:#5af78e">&#34;plugins/themes&#34;</span>;</span></span></code></pre></div><p>Then set <code>BookTheme</code> to one of:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Theme</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>contrast-light</code></td>
+					<td>High contrast light variant</td>
+			</tr>
+			<tr>
+					<td><code>contrast-dark</code></td>
+					<td>High contrast dark variant</td>
+			</tr>
+			<tr>
+					<td><code>contrast-auto</code></td>
+					<td>High contrast, auto-switching</td>
+			</tr>
+			<tr>
+					<td><code>catppuccin-light</code></td>
+					<td><a href="https://catppuccin.com/">Catppuccin</a> Latte palette</td>
+			</tr>
+			<tr>
+					<td><code>catppuccin-dark</code></td>
+					<td>Catppuccin Frappe palette</td>
+			</tr>
+			<tr>
+					<td><code>catppuccin-auto</code></td>
+					<td>Catppuccin, auto-switching</td>
+			</tr>
+			<tr>
+					<td><code>ayu-light</code></td>
+					<td><a href="https://github.com/ayu-theme">Ayu</a> light palette</td>
+			</tr>
+			<tr>
+					<td><code>ayu-dark</code></td>
+					<td>Ayu mirage dark palette</td>
+			</tr>
+			<tr>
+					<td><code>ayu-auto</code></td>
+					<td>Ayu, auto-switching</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="custom-theme">Custom Theme<a class="anchor" href="#custom-theme">#</a></h2>
+<p>Define a theme mixin in <code>assets/_custom.scss</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#ff6ac1">@mixin</span><span style="color:#57c7ff"> theme-mytheme</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">--body-background</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">#fafafa</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">--body-font-color</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">#333</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">--color-link</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">#0066cc</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">--color-visited-link</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">#6633cc</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Then set <code>BookTheme = 'mytheme'</code>. The theme uses <code>@include theme-{{ .Site.Params.BookTheme }}</code> to select the mixin at build time.</p>
+<p>For auto-switching themes (light/dark based on OS preference), see the <code>theme-auto</code> mixin in <code>assets/_defaults.scss</code> as a reference.</p>
+<h2 id="css-custom-properties">CSS Custom Properties<a class="anchor" href="#css-custom-properties">#</a></h2>
+<p>Override CSS custom properties in <code>_custom.scss</code> to adjust the current theme. The full set of properties is defined in <a href="https://github.com/alex-shpak/hugo-book/blob/main/assets/_defaults.scss"><code>assets/_defaults.scss</code></a>.</p>
+<h2 id="custom-styles">Custom Styles<a class="anchor" href="#custom-styles">#</a></h2>
+<p>The theme includes an empty <code>assets/_custom.scss</code> file that is loaded after all theme styles. Create this file in your project&rsquo;s <code>assets/</code> directory to add custom CSS without overriding the entire stylesheet.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#78787e">// assets/_custom.scss
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f3f99d">.book-page</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">max-width</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">60</span><span style="color:#9aedfe">rem</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f3f99d">.book-menu</span> <span style="color:#ff6ac1">nav</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#57c7ff">font-size</span><span style="color:#ff6ac1">:</span> <span style="color:#ff9f43">0</span><span style="color:#ff9f43">.9</span><span style="color:#9aedfe">rem</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h2 id="scss-plugins">SCSS Plugins<a class="anchor" href="#scss-plugins">#</a></h2>
+<p>The theme ships with optional SCSS plugins. Import them in your <code>_custom.scss</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#ff6ac1">@import</span> <span style="color:#5af78e">&#34;plugins/numbered&#34;</span>; <span style="color:#78787e">/* Automatically number headings in the content area */</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">@import</span> <span style="color:#5af78e">&#34;plugins/scrollbars&#34;</span>; <span style="color:#78787e">/* Style scrollbars in the sidebar and content area */</span></span></span></code></pre></div><h2 id="scss-variables">SCSS Variables<a class="anchor" href="#scss-variables">#</a></h2>
+<p>Layout variables like sidebar width, breakpoints, and padding are defined in <a href="https://github.com/alex-shpak/hugo-book/blob/main/assets/_defaults.scss"><code>assets/_defaults.scss</code></a>. Override them in your <code>_custom.scss</code>.</p>
+<h2 id="override-priority">Override Priority<a class="anchor" href="#override-priority">#</a></h2>
+<p>Hugo&rsquo;s <a href="https://gohugo.io/templates/lookup-order/">lookup order</a> lets you override any theme file by creating the same file in your project:</p>
+<ul>
+<li><code>layouts/</code>: Override templates and partials</li>
+<li><code>assets/</code>: Override SCSS and JavaScript</li>
+<li><code>static/</code>: Override static files (favicon, images)</li>
+<li><code>i18n/</code>: Override or add translations</li>
+</ul>
+</section>
+  
+    <section id="inject-partials"><h1 id="inject-partials">Inject Partials<a class="anchor" href="#inject-partials">#</a></h1>
+<p>The theme provides empty partial templates at key points in the page layout. Override these to inject custom HTML without modifying the base templates.</p>
+<p>Create matching files in your project&rsquo;s <code>layouts/_partials/docs/inject/</code> directory.</p>
+<table>
+	<thead>
+			<tr>
+					<th>Partial</th>
+					<th>Location</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>inject/head.html</code></td>
+					<td>Inside <code>&lt;head&gt;</code>, e.g. meta tags, stylesheets, scripts</td>
+			</tr>
+			<tr>
+					<td><code>inject/body.html</code></td>
+					<td>Before <code>&lt;/body&gt;</code>, e.g. analytics, chat widgets, scripts</td>
+			</tr>
+			<tr>
+					<td><code>inject/menu-before.html</code></td>
+					<td>Before the sidebar menu</td>
+			</tr>
+			<tr>
+					<td><code>inject/menu-after.html</code></td>
+					<td>After the sidebar menu</td>
+			</tr>
+			<tr>
+					<td><code>inject/content-before.html</code></td>
+					<td>Before the page content</td>
+			</tr>
+			<tr>
+					<td><code>inject/content-after.html</code></td>
+					<td>After the page content</td>
+			</tr>
+			<tr>
+					<td><code>inject/toc-before.html</code></td>
+					<td>Before the table of contents</td>
+			</tr>
+			<tr>
+					<td><code>inject/toc-after.html</code></td>
+					<td>After the table of contents</td>
+			</tr>
+			<tr>
+					<td><code>inject/footer.html</code></td>
+					<td>Inside the page footer</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="example">Example<a class="anchor" href="#example">#</a></h2>
+<p>To add a Google Analytics script, create <code>layouts/_partials/docs/inject/head.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ with .Site.Params.googleAnalytics }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff6ac1">script</span> <span style="color:#57c7ff">async</span> <span style="color:#57c7ff">src</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;https://www.googletagmanager.com/gtag/js?id={{ . }}&#34;</span>&gt;&lt;/<span style="color:#ff6ac1">script</span>&gt;
+</span></span><span style="display:flex;"><span>{{ end }}</span></span></code></pre></div><p>To add a custom banner above every page, create <code>layouts/_partials/docs/inject/content-before.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#ff6ac1">div</span> <span style="color:#57c7ff">class</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;my-banner&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  This documentation is for version 2.0. See &lt;<span style="color:#ff6ac1">a</span> <span style="color:#57c7ff">href</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;/v1/&#34;</span>&gt;version 1.0 docs&lt;/<span style="color:#ff6ac1">a</span>&gt;.
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff6ac1">div</span>&gt;</span></span></code></pre></div></section>
+  
+  </article>
+ 
+      
+
+      <footer class="book-footer">
+        
+
+ 
+        
+  
+ 
+        
+        
+  
+  <div class="book-copyright flex justify-center">
+    <small>时尚百货城 Wiki - FlameTech6. All rights reserved.</small>
+
+  </div>
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  <h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>时尚百货城 Wiki</span>
+  </a>
+</h2>
+
+  <nav id="TableOfContents">
+    <ul>
+      <li>
+        <a href="#docs">Docs</a>
+      </li>
+      
+      <li>
+        <a href="#%e6%9c%ac%e7%ab%99%e7%8e%b0%e5%86%b5">本站现况</a>
+      </li>
+      
+      <li>
+        <a href="#%e5%bb%ba%e7%ab%99%e7%a4%ba%e4%be%8b%e5%86%85%e5%ae%b9">建站示例内容</a>
+      </li>
+      
+      <li>
+        <a href="#introduction">Introduction</a>
+      </li>
+      
+      <li>
+        <a href="#create-a-site">Create a Site</a>
+      </li>
+      
+      <li>
+        <a href="#configuration">Configuration</a>
+      </li>
+      
+      <li>
+        <a href="#organisation">Organisation</a>
+      </li>
+      
+      <li>
+        <a href="#pages">Pages</a>
+      </li>
+      
+      <li>
+        <a href="#menus">Menus</a>
+      </li>
+      
+      <li>
+        <a href="#blog">Blog</a>
+      </li>
+      
+      <li>
+        <a href="#multi-language">Multi-Language</a>
+      </li>
+      
+      <li>
+        <a href="#shortcodes">Shortcodes</a>
+      </li>
+      
+      <li>
+        <a href="#asciinema">Asciinema</a>
+      </li>
+      
+      <li>
+        <a href="#buttons">Buttons</a>
+      </li>
+      
+      <li>
+        <a href="#columns">Columns</a>
+      </li>
+      
+      <li>
+        <a href="#details">Details</a>
+      </li>
+      
+      <li>
+        <a href="#images">Images</a>
+      </li>
+      
+      <li>
+        <a href="#openapi">OpenAPI</a>
+      </li>
+      
+      <li>
+        <a href="#hints">Hints</a>
+      </li>
+      
+      <li>
+        <a href="#mermaid">Mermaid</a>
+      </li>
+      
+      <li>
+        <a href="#steps">Steps</a>
+      </li>
+      
+      <li>
+        <a href="#tabs">Tabs</a>
+      </li>
+      
+      <li>
+        <a href="#katex">KaTeX</a>
+      </li>
+      
+      <li>
+        <a href="#styles">Styles</a>
+      </li>
+      
+      <li>
+        <a href="#inject-partials">Inject Partials</a>
+      </li>
+      
+    </ul>
+  </nav>
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

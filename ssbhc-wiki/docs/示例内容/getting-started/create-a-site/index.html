@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Create a Site# Prerequisites# Hugo extended edition (required for SCSS processing) Git (for theme installation using git submodules) Go (for theme installation using Hugo Modules) Quick Start# Use the starter repository to get a working site in seconds. It can also be used as a GitHub template to create a new repository.
+git clone https://github.com/alex-shpak/hugo-book-starter documentation cd documentation git submodule update --init --remote hugo server --minifyBy default, the theme renders pages under docs/ section as the sidebar menu. See Content Organisation for details.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/">
+	<meta property="og:site_name" content="时尚百货城 Wiki">
+	<meta property="og:title" content="时尚百货城 Wiki">
+	<meta property="og:description" content="Create a Site# Prerequisites# Hugo extended edition (required for SCSS processing) Git (for theme installation using git submodules) Go (for theme installation using Hugo Modules) Quick Start# Use the starter repository to get a working site in seconds. It can also be used as a GitHub template to create a new repository.
+git clone https://github.com/alex-shpak/hugo-book-starter documentation cd documentation git submodule update --init --remote hugo server --minifyBy default, the theme renders pages under docs/ section as the sidebar menu. See Content Organisation for details.">
+	<meta property="og:locale" content="zh">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="docs">
+
+
+	<meta itemprop="name" content="时尚百货城 Wiki">
+	<meta itemprop="description" content="Create a Site# Prerequisites# Hugo extended edition (required for SCSS processing) Git (for theme installation using git submodules) Go (for theme installation using Hugo Modules) Quick Start# Use the starter repository to get a working site in seconds. It can also be used as a GitHub template to create a new repository.
+git clone https://github.com/alex-shpak/hugo-book-starter documentation cd documentation git submodule update --init --remote hugo server --minifyBy default, the theme renders pages under docs/ section as the sidebar menu. See Content Organisation for details.">
+	<meta itemprop="wordCount" content="222">
+
+<title>Create a Site • 时尚百货城 Wiki</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/">
+<link rel="stylesheet" href="/book.min.7dca40f168e2fd532b7b1937df678e5fcb9289577e924bd85f799138b6137fa6.css" integrity="sha256-fcpA8Wji/VMrexk332eOX8uSiVd&#43;kkvYX3mROLYTf6Y=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/zh.search.min.c51d4b361614610b5ab99a3dcd58cb7316fb5504b401887d9dbb0ac057a1b987.js" integrity="sha256-xR1LNhYUYQtauZo9zVjLcxb7VQS0AYh9nbsKwFehuYc=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<link rel="alternate" type="text/plain" href="http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/source.txt" title="" />
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>时尚百货城 Wiki</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="搜索"
+    aria-label="搜索"
+    maxlength="64" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/" class="">
+      示例内容</a>
+  
+
+          
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/rocket.svg" class="book-icon" alt="rocket" />Getting Started</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/" class="">
+      Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/" class="active">
+      Create a Site</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/" class="">
+      Configuration</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/edit.svg" class="book-icon" alt="edit" />Content &amp; Structure</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/" class="">
+      Organisation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/" class="">
+      Pages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/" class="">
+      Menus</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/" class="">
+      Blog</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/" class="">
+      Multi-Language</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ebc4af295966f0b939eddc31340f3327" class="toggle"  />
+    <label for="section-ebc4af295966f0b939eddc31340f3327" class="flex">
+      <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/" class="">
+        Shortcodes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/" class="">
+      Asciinema</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/" class="">
+      Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/" class="">
+      Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/" class="">
+      Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-60e291ec05d4144bc91ed9aca2296aa1" class="toggle"  />
+    <label for="section-60e291ec05d4144bc91ed9aca2296aa1" class="flex">
+      <a role="button" class="">
+        Experimental</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/" class="">
+      Images</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/" class="">
+      OpenAPI</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/" class="">
+      Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/" class="">
+      Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/" class="">
+      Steps</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/" class="">
+      Tabs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/" class="">
+      KaTeX</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/apparel.svg" class="book-icon" alt="apparel" />Customization</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/" class="">
+      Styles</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/" class="">
+      Inject Partials</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="/book/" title="Single Page">Single Page</a></li><li><a href="https://github.com/alex-shpak/hugo-book/" target="_blank" rel="noopener">Github</a></li></ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Create a Site</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-a-site">Create a Site</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#quick-start">Quick Start</a></li>
+        <li><a href="#installation-methods">Installation Methods</a></li>
+        <li><a href="#minimal-configuration">Minimal Configuration</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="create-a-site">Create a Site<a class="anchor" href="#create-a-site">#</a></h1>
+<h2 id="prerequisites">Prerequisites<a class="anchor" href="#prerequisites">#</a></h2>
+<ul>
+<li><a href="https://gohugo.io/installation/">Hugo</a> <strong>extended</strong> edition (required for SCSS processing)</li>
+<li><a href="https://git-scm.com/downloads">Git</a> (for theme installation using git submodules)</li>
+<li><a href="https://go.dev/dl/">Go</a> (for theme installation using Hugo Modules)</li>
+</ul>
+<h2 id="quick-start">Quick Start<a class="anchor" href="#quick-start">#</a></h2>
+<p>Use the <a href="https://github.com/alex-shpak/hugo-book-starter">starter repository</a> to get a working site in seconds. It can also be used as a <a href="https://github.com/alex-shpak/hugo-book-starter/generate">GitHub template</a> to create a new repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/alex-shpak/hugo-book-starter documentation
+</span></span><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> documentation
+</span></span><span style="display:flex;"><span>git submodule update --init --remote
+</span></span><span style="display:flex;"><span>hugo server --minify</span></span></code></pre></div><p>By default, the theme renders pages under <code>docs/</code> section as the sidebar menu. See <a href="/docs/content/organisation/">Content Organisation</a> for details.</p>
+<h2 id="installation-methods">Installation Methods<a class="anchor" href="#installation-methods">#</a></h2>
+<div class="book-tabs" >
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-0" checked="checked" /><label for="tabs-&lt;nil&gt;-0">Git Submodule</label><div class="book-tabs-content markdown-inner">
+<p>The simplest approach. The theme is vendored directly into your repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book</span></span></code></pre></div><p>Set the theme in your config</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>theme = <span style="color:#5af78e">&#39;hugo-book&#39;</span></span></span></code></pre></div><p>To update the theme later</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule update --remote --merge</span></span></code></pre></div></div>
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-1"  /><label for="tabs-&lt;nil&gt;-1">Hugo Module</label><div class="book-tabs-content markdown-inner">
+<p>Uses <a href="https://gohugo.io/hugo-modules/">Hugo Modules</a> (requires <a href="https://go.dev/dl/">Go</a>).</p>
+<p>Initialize your site as a module</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo mod init github.com/user/my-docs</span></span></code></pre></div><p>Add the theme import to your config</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[module]
+</span></span><span style="display:flex;"><span>[[module.imports]]
+</span></span><span style="display:flex;"><span>  path = <span style="color:#5af78e">&#39;github.com/alex-shpak/hugo-book&#39;</span></span></span></code></pre></div><p>To update the theme later</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo mod get -u</span></span></code></pre></div></div>
+
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-2"  /><label for="tabs-&lt;nil&gt;-2">Manual Download</label><div class="book-tabs-content markdown-inner">
+<p>Download the theme from <a href="https://github.com/alex-shpak/hugo-book/releases">GitHub releases</a> and extract it to <code>themes/hugo-book</code>.</p>
+<p>Set the theme in your config</p>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>theme = <span style="color:#5af78e">&#39;hugo-book&#39;</span></span></span></code></pre></div><p>To update, download and extract the new release again.</p>
+</div>
+
+</div>
+<h2 id="minimal-configuration">Minimal Configuration<a class="anchor" href="#minimal-configuration">#</a></h2>
+<div class="book-codeblock-filename">
+  <a >hugo.toml</a>
+</div><div class="highlight" filename="hugo.toml"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>baseURL = <span style="color:#5af78e">&#39;https://example.com/&#39;</span>
+</span></span><span style="display:flex;"><span>title = <span style="color:#5af78e">&#39;My Documentation&#39;</span>
+</span></span><span style="display:flex;"><span>theme = <span style="color:#5af78e">&#39;hugo-book&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e"># Required for mermaid and katex shortcodes</span>
+</span></span><span style="display:flex;"><span>[markup.goldmark.renderer]
+</span></span><span style="display:flex;"><span>  unsafe = <span style="color:#ff6ac1">true</span></span></span></code></pre></div><p>See <a href="/docs/getting-started/configuration/">Configuration</a> for the full list of parameters.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+  <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/%5Ccontent.zh%5Cdocs%5C%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9%5Cgetting-started%5Ccreate-a-site.md" target="_blank" rel="noopener edit">
+    <img src="/icons/edit.svg" class="book-icon" alt="Edit" />
+    <span>编辑本页</span>
+  </a>
+
+</div>
+
+</div>
+
+<div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Introduction</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/" class="flex align-center">
+        <span>Configuration</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+  <div class="book-copyright flex justify-center">
+    <small>时尚百货城 Wiki - FlameTech6. All rights reserved.</small>
+
+  </div>
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-a-site">Create a Site</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#quick-start">Quick Start</a></li>
+        <li><a href="#installation-methods">Installation Methods</a></li>
+        <li><a href="#minimal-configuration">Minimal Configuration</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

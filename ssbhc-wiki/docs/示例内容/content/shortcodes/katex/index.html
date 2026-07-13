@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="KaTeX# Render math typesetting with KaTeX. The library is loaded automatically on first use.
+Activation# KaTeX is activated on the page by the first use of the shortcode or a katex code block. You can force activation with {{&lt; katex /&gt;}}, then use delimiters anywhere on the page.
+Block Rendering# Three equivalent ways to render display math:
+Shortcode
+{{&lt; katex display=true &gt;}} f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi {{&lt; /katex &gt;}} Code block
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/">
+	<meta property="og:site_name" content="时尚百货城 Wiki">
+	<meta property="og:title" content="KaTeX">
+	<meta property="og:description" content="KaTeX# Render math typesetting with KaTeX. The library is loaded automatically on first use.
+Activation# KaTeX is activated on the page by the first use of the shortcode or a katex code block. You can force activation with {{&lt; katex /&gt;}}, then use delimiters anywhere on the page.
+Block Rendering# Three equivalent ways to render display math:
+Shortcode
+{{&lt; katex display=true &gt;}} f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi {{&lt; /katex &gt;}} Code block">
+	<meta property="og:locale" content="zh">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="docs">
+
+
+	<meta itemprop="name" content="KaTeX">
+	<meta itemprop="description" content="KaTeX# Render math typesetting with KaTeX. The library is loaded automatically on first use.
+Activation# KaTeX is activated on the page by the first use of the shortcode or a katex code block. You can force activation with {{&lt; katex /&gt;}}, then use delimiters anywhere on the page.
+Block Rendering# Three equivalent ways to render display math:
+Shortcode
+{{&lt; katex display=true &gt;}} f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi {{&lt; /katex &gt;}} Code block">
+	<meta itemprop="wordCount" content="178">
+
+<title>KaTeX • 时尚百货城 Wiki</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/">
+<link rel="stylesheet" href="/book.min.7dca40f168e2fd532b7b1937df678e5fcb9289577e924bd85f799138b6137fa6.css" integrity="sha256-fcpA8Wji/VMrexk332eOX8uSiVd&#43;kkvYX3mROLYTf6Y=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/zh.search.min.c51d4b361614610b5ab99a3dcd58cb7316fb5504b401887d9dbb0ac057a1b987.js" integrity="sha256-xR1LNhYUYQtauZo9zVjLcxb7VQS0AYh9nbsKwFehuYc=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<link rel="alternate" type="text/plain" href="http://localhost:8080/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/source.txt" title="KaTeX" />
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>时尚百货城 Wiki</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="搜索"
+    aria-label="搜索"
+    maxlength="64" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/" class="">
+      示例内容</a>
+  
+
+          
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/rocket.svg" class="book-icon" alt="rocket" />Getting Started</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/" class="">
+      Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/" class="">
+      Create a Site</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/" class="">
+      Configuration</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/edit.svg" class="book-icon" alt="edit" />Content &amp; Structure</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/" class="">
+      Organisation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/" class="">
+      Pages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/" class="">
+      Menus</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/" class="">
+      Blog</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/" class="">
+      Multi-Language</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ebc4af295966f0b939eddc31340f3327" class="toggle" checked />
+    <label for="section-ebc4af295966f0b939eddc31340f3327" class="flex">
+      <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/" class="">
+        Shortcodes</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/" class="">
+      Asciinema</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/" class="">
+      Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/" class="">
+      Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/" class="">
+      Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-60e291ec05d4144bc91ed9aca2296aa1" class="toggle"  />
+    <label for="section-60e291ec05d4144bc91ed9aca2296aa1" class="flex">
+      <a role="button" class="">
+        Experimental</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/" class="">
+      Images</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/" class="">
+      OpenAPI</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/" class="">
+      Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/" class="">
+      Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/" class="">
+      Steps</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/" class="">
+      Tabs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/" class="active">
+      KaTeX</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a>
+      <img src="/icons/apparel.svg" class="book-icon" alt="apparel" />Customization</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/" class="">
+      Styles</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/" class="">
+      Inject Partials</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="/book/" title="Single Page">Single Page</a></li><li><a href="https://github.com/alex-shpak/hugo-book/" target="_blank" rel="noopener">Github</a></li></ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>KaTeX</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#katex">KaTeX</a>
+      <ul>
+        <li><a href="#activation">Activation</a></li>
+        <li><a href="#block-rendering">Block Rendering</a></li>
+        <li><a href="#inline-rendering">Inline Rendering</a></li>
+        <li><a href="#configuration">Configuration</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="katex">KaTeX<a class="anchor" href="#katex">#</a></h1>
+<p>Render math typesetting with <a href="https://katex.org/">KaTeX</a>. The library is loaded automatically on first use.</p>
+<link rel="stylesheet" href="/katex/katex.min.css" /><script defer src="/katex/katex.min.js"></script><script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body, {&#34;delimiters&#34;:[{&#34;left&#34;:&#34;$$&#34;,&#34;right&#34;:&#34;$$&#34;,&#34;display&#34;:true},{&#34;left&#34;:&#34;\\(&#34;,&#34;right&#34;:&#34;\\)&#34;,&#34;display&#34;:false},{&#34;left&#34;:&#34;\\[&#34;,&#34;right&#34;:&#34;\\]&#34;,&#34;display&#34;:true}]});"></script>
+<h2 id="activation">Activation<a class="anchor" href="#activation">#</a></h2>
+<p>KaTeX is activated on the page by the first use of the shortcode or a <code>katex</code> code block. You can force activation with <code>{{&lt; katex /&gt;}}</code>, then use delimiters anywhere on the page.</p>
+<h2 id="block-rendering">Block Rendering<a class="anchor" href="#block-rendering">#</a></h2>
+<p>Three equivalent ways to render display math:</p>
+<div class="book-columns" id="book-columns-1" >
+<ul>
+<li>
+<p><strong>Shortcode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#57c7ff">katex</span> <span style="color:#57c7ff">display</span><span style="color:#ff6ac1">=</span><span style="color:#ff6ac1">true</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span>
+</span></span><span style="display:flex;"><span>f(x) = \int_<span style="color:#78787e">{</span><span style="color:#ff6ac1">-</span><span style="color:#ff5c57">\</span><span style="color:#57c7ff">infty</span><span style="color:#78787e">}</span>^\infty
+</span></span><span style="display:flex;"><span>\hat f(\xi)\,e^<span style="color:#78787e">{</span><span style="color:#ff9f43">2</span> <span style="color:#ff5c57">\</span><span style="color:#57c7ff">pi</span> <span style="color:#57c7ff">i</span> <span style="color:#ff5c57">\</span><span style="color:#57c7ff">xi</span> <span style="color:#57c7ff">x</span><span style="color:#78787e">}</span>\,d\xi
+</span></span><span style="display:flex;"><span><span style="color:#78787e">{{</span><span style="color:#ff6ac1">&lt;</span> <span style="color:#ff6ac1">/</span><span style="color:#57c7ff">katex</span> <span style="color:#ff6ac1">&gt;</span><span style="color:#78787e">}}</span></span></span></code></pre></div></li>
+<li>
+<p><strong>Code block</strong></p>
+<pre tabindex="0"><code>```katex
+f(x) = \int_{-\infty}^\infty
+\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+```</code></pre></li>
+<li>
+<p><strong>Dollar delimiters</strong></p>
+<pre tabindex="0"><code>$$
+f(x) = \int_{-\infty}^\infty
+\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+$$</code></pre></li>
+</ul>
+</div>
+<p>Result:</p>
+<p>$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi),e^{2 \pi i \xi x},d\xi
+$$</p>
+<h2 id="inline-rendering">Inline Rendering<a class="anchor" href="#inline-rendering">#</a></h2>
+<table>
+	<thead>
+			<tr>
+					<th>Syntax</th>
+					<th>Output</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>{{&lt; katex &gt;}}\pi(x){{&lt; /katex &gt;}}</code></td>
+					<td><span class="book-katex" >\( \pi(x) \)</span></td>
+			</tr>
+			<tr>
+					<td><code>\\( \pi(x) \\)</code></td>
+					<td>\( \pi(x) \)</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="configuration">Configuration<a class="anchor" href="#configuration">#</a></h2>
+<p>Override KaTeX options by creating <code>assets/katex.json</code>. For example, to enable <code>$...$</code> inline delimiters</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;delimiters&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {<span style="color:#ff6ac1">&#34;left&#34;</span>: <span style="color:#5af78e">&#34;$$&#34;</span>, <span style="color:#ff6ac1">&#34;right&#34;</span>: <span style="color:#5af78e">&#34;$$&#34;</span>, <span style="color:#ff6ac1">&#34;display&#34;</span>: <span style="color:#ff6ac1">true</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#ff6ac1">&#34;left&#34;</span>: <span style="color:#5af78e">&#34;$&#34;</span>, <span style="color:#ff6ac1">&#34;right&#34;</span>: <span style="color:#5af78e">&#34;$&#34;</span>, <span style="color:#ff6ac1">&#34;display&#34;</span>: <span style="color:#ff6ac1">false</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#ff6ac1">&#34;left&#34;</span>: <span style="color:#5af78e">&#34;\\(&#34;</span>, <span style="color:#ff6ac1">&#34;right&#34;</span>: <span style="color:#5af78e">&#34;\\)&#34;</span>, <span style="color:#ff6ac1">&#34;display&#34;</span>: <span style="color:#ff6ac1">false</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#ff6ac1">&#34;left&#34;</span>: <span style="color:#5af78e">&#34;\\[&#34;</span>, <span style="color:#ff6ac1">&#34;right&#34;</span>: <span style="color:#5af78e">&#34;\\]&#34;</span>, <span style="color:#ff6ac1">&#34;display&#34;</span>: <span style="color:#ff6ac1">true</span>}
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>See <a href="https://katex.org/docs/options.html">KaTeX options</a> for all available settings.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+  <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/%5Ccontent.zh%5Cdocs%5C%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9%5Ccontent%5Cshortcodes%5Ckatex.md" target="_blank" rel="noopener edit">
+    <img src="/icons/edit.svg" class="book-icon" alt="Edit" />
+    <span>编辑本页</span>
+  </a>
+
+</div>
+
+</div>
+
+<div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Tabs</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/" class="flex align-center">
+        <span>Styles</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+  <div class="book-copyright flex justify-center">
+    <small>时尚百货城 Wiki - FlameTech6. All rights reserved.</small>
+
+  </div>
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#katex">KaTeX</a>
+      <ul>
+        <li><a href="#activation">Activation</a></li>
+        <li><a href="#block-rendering">Block Rendering</a></li>
+        <li><a href="#inline-rendering">Inline Rendering</a></li>
+        <li><a href="#configuration">Configuration</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

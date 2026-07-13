@@ -1,0 +1,93 @@
+时尚百货城 Wiki
+
+- Docs: http://localhost:8080/docs/
+- 本站现况: http://localhost:8080/docs/%E6%9C%AC%E7%AB%99%E7%8E%B0%E5%86%B5/
+- 建站示例内容: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/
+- Introduction: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/introduction/
+- Create a Site: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/create-a-site/
+- Configuration: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/getting-started/configuration/
+- Organisation: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/organisation/
+- Pages: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/pages/
+- Menus: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/menus/
+- Blog: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/blog/
+- Multi-Language: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/multilingual/
+- Shortcodes: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/
+- Asciinema: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/asciinema/
+- Buttons: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/buttons/
+- Columns: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/columns/
+- Details: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/details/
+- Images: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/images/
+- OpenAPI: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/experimental/openapi/
+- Hints: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/hints/
+- Mermaid: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/mermaid/
+- Steps: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/steps/
+- Tabs: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/tabs/
+- KaTeX: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/content/shortcodes/katex/
+- Styles: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/styles/
+- Inject Partials: http://localhost:8080/docs/%E5%BB%BA%E7%AB%99%E7%A4%BA%E4%BE%8B%E5%86%85%E5%AE%B9/customization/inject-partials/
+
+
+# Page Frontmatter
+
+Every page can use these [frontmatter](https://gohugo.io/content-management/front-matter/) parameters to control its behavior in the theme.
+
+{{< tabs >}}
+{{% tab "YAML" %}}
+```yaml
+---
+title: My Page
+weight: 10
+bookToC: true
+bookCollapseSection: true
+---
+```
+{{% /tab %}}
+
+{{% tab "TOML" %}}
+```toml
++++
+title = 'My Page'
+weight = 10
+bookToC = true
+bookCollapseSection = true
++++
+```
+{{% /tab %}}
+
+{{% tab "JSON" %}}
+```json
+{
+  "title": "My Page",
+  "weight": 10,
+  "bookToC": true,
+  "bookCollapseSection": true
+}
+```
+{{% /tab %}}
+{{< /tabs >}}
+
+## Navigation
+
+These parameters control how the page appears in the sidebar menu. Set in page frontmatter.
+
+| Parameter | Default | Description |
+| --- | --- | --- |
+| `weight` | | Menu ordering. Lower values appear first. Without weight, pages are sorted alphabetically. |
+| `bookHidden` | `false` | Hide the page from the sidebar menu. The page is still accessible by URL. |
+| `bookCollapseSection` | `false` | Make a section collapsible in the sidebar. Subsections are hidden until clicked. |
+| `bookFlatSection` | `false` | Display subsection pages at the same level instead of nesting them. |
+| `bookHref` | | Override the menu link with an external URL. |
+| `bookIcon` | | Display an icon next to the menu entry. |
+
+## Content Display
+
+These parameters control page content rendering. Set in page frontmatter.
+
+| Parameter | Default | Description |
+| --- | --- | --- |
+| `bookToC` | | Show or hide the table of contents. Overrides the site-level `BookToC` setting. |
+| `bookComments` | | Show or hide comments. Overrides the site-level `BookComments` setting. |
+| `bookSearchExclude` | `false` | Exclude this page from the search index. |
+
+See [Blog](/docs/content/blog/) for post-specific frontmatter.
+
